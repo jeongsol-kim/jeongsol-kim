@@ -5,6 +5,7 @@ import Introduction from './components/introduction/Introduction';
 import About from './components/about/About';
 import News from './components/news/News';
 import Publication from './components/publication/Publication';
+import Education from './components/education/Education';
 // import Conference from './components/conference/Conference';
 import Awards from './components/award/Award';
 import Footer from './components/footer/Footer';
@@ -15,6 +16,7 @@ function App() {
       <Navigation />
       <Introduction />
       <About />
+      <Education />
       <News />
       <Publication />
       {/* <Conference /> */}
