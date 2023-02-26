@@ -13,18 +13,11 @@ export default class About extends Component{
                         <div className="columns is-centered has-text-centered">
                         <div className="column is-four-fifths">
                             <Card>
-                                <Grid container spacing={1}>
+                                <Grid container>
                                     <Grid item xs={6}>
-                                        <h4 className="subtitle left">
+                                        <h4 className="subtitle left" style={{margin: '1em 0em'}}>
                                         About Me
                                         </h4>
-                                    </Grid>
-                                    <Grid item xs={6}>
-                                        <h4 className="subtitle left">
-                                        Bio
-                                        </h4>
-                                    </Grid>
-                                    <Grid item xs={6}>
                                         <div className="has-text-justified">
                                         <p style={{padding: '0rem 1rem'}}>
                                             Hello, I'm Jeongsol Kim, Ph.D candidate at Korea Advanced
@@ -38,7 +31,8 @@ export default class About extends Component{
                                         </div>
                                     </Grid>
                                     <Grid item xs={6}>
-                                        <List>
+                                        <div style={{padding: '2.5em 0em'}}></div>
+                                        <List style={{padding: '0em 0em'}}>
                                             <ListItem>
                                                 <ListItemAvatar>
                                                     <Avatar>
