@@ -1,10 +1,20 @@
-
+import {Card} from "@mui/material";
 import {Component, Fragment} from "react";
 
 
 const AwardBlock = () => (
     <section className="section">
-        <p>Honors & Awards</p>
+        <div className="container is-max-desktop">
+            <div className="columns is-centered has-text-centered">
+                <div className="column is-four-fifths">
+                    <Card>
+                        <h4 className="subtitle left">
+                            Honors & Awards
+                        </h4>
+                    </Card>
+                </div>
+            </div>
+        </div>
     </section>
 )
 
