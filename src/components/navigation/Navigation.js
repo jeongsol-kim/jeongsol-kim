@@ -26,9 +26,9 @@ const NaviBlock2 = () => (
                     <Button color="inherit">
                         Publications
                     </Button>
-                    <Button color="inherit">
+                    {/* <Button color="inherit">
                         Conferences
-                    </Button>
+                    </Button> */}
                     <Button color="inherit">
                         Awards
                     </Button>
