@@ -4,12 +4,6 @@ import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import {Component, Fragment} from "react";
 
-const Logo = () => (
-    <div className="container">
-        <p>Jeongsol Kim</p>
-    </div>
-)
-
 const NaviBlock2 = () => (
         <Box sx={{flexGrow: 1}}>
             <AppBar position='static' style={{backgroundColor:"#4FC581"}}>
