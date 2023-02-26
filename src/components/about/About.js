@@ -27,7 +27,7 @@ export default class About extends Component{
                                     <Grid item xs={6}>
                                         <div className="has-text-justified">
                                         <p style={{padding: '0rem 1rem'}}>
-                                            Hello, I'm Jeongsol Kim, Ph.D candidate at Korea Advanced
+                                            Hello. I'm Jeongsol Kim, Ph.D candidate at Korea Advanced
                                             Inst. of Science and Technology (KAIST).
                                         </p>
                                         <p style={{padding: '0rem 1rem'}}>
