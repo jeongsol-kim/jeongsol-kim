@@ -1,8 +1,10 @@
 import {Component, Fragment} from "react";
-import {Grid, Card, List, ListItem, ListItemAvatar, ListItemText, Avatar} from "@mui/material";
+import {Grid, Card, List, ListItem, ListItemAvatar, ListItemText, Avatar, ButtonGroup, Button, ListItemSecondaryAction, ListItemButton} from "@mui/material";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import ArticleIcon from '@mui/icons-material/Article';
 
 export default class About extends Component{
     render(){
@@ -15,18 +17,17 @@ export default class About extends Component{
                             <Card>
                                 <Grid container>
                                     <Grid item xs={6}>
-                                        <h4 className="subtitle left" style={{margin: '1em 0em'}}>
+                                        <h2 style={{margin: '1em 1em', textAlign:'left'}}>
                                         About Me
-                                        </h4>
+                                        </h2>
                                         <div className="has-text-justified">
                                         <p style={{padding: '0rem 1rem'}}>
-                                            Hello, I'm Jeongsol Kim, Ph.D candidate at Korea Advanced
-                                            Inst. of Science and Technology (KAIST).
-                                        </p>
-                                        <p style={{padding: '0rem 1rem'}}>
-                                            My research interests are machine learning includes
+                                            My research interests are machine learning including
                                             federated learning, diffusion-based generative model, and
                                             application to optics.
+                                            My main programming language is Python, but I also enjoy
+                                            playing with MatLab, C#, C++ and Javascript.
+                                            I hope to be a professional in my research field.
                                         </p>
                                         </div>
                                     </Grid>
