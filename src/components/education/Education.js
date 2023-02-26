@@ -9,9 +9,9 @@ const EducationBlock  = () => (
             <div className="columns is-centered has-text-centered">
                 <div className="column is-four-fifths">
                     <Card>
-                        <h4 className="subtitle left">
+                        <h2 style={{margin: '1em 1em', textAlign:'left'}}>
                             Education
-                        </h4>
+                        </h2>
                         <VerticalTimeline>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--education"
