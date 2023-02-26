@@ -6,7 +6,7 @@ import {Component, Fragment} from "react";
 
 const NaviBlock2 = () => (
         <Box sx={{flexGrow: 1}}>
-            <AppBar position='static' style={{backgroundColor:"#4FC581"}}>
+            <AppBar position='static' style={{backgroundColor:"#03C988"}}>
                 <Toolbar sx={{mx: "auto", width:"100%", maxWidth: 800}}>
                     <IconButton size="large"
                                 edge="start"
@@ -21,14 +21,14 @@ const NaviBlock2 = () => (
                         About
                     </Button>
                     <Button color="inherit">
+                        Education
+                    </Button>
+                    <Button color="inherit">
                         Update
                     </Button>
                     <Button color="inherit">
                         Publications
                     </Button>
-                    {/* <Button color="inherit">
-                        Conferences
-                    </Button> */}
                     <Button color="inherit">
                         Awards
                     </Button>
