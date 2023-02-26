@@ -12,7 +12,7 @@ const Logo = () => (
 
 const NaviBlock2 = () => (
         <Box sx={{flexGrow: 1}}>
-            <AppBar position='static'>
+            <AppBar position='static' style={{backgroundColor:"#4FC581"}}>
                 <Toolbar sx={{mx: "auto", width:"100%", maxWidth: 800}}>
                     <IconButton size="large"
                                 edge="start"
