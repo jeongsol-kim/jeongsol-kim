@@ -74,6 +74,11 @@ body {
   line-height: 1.5;
 }
 
+.navi {
+  background-color: #fafafa ;
+  padding: 2rem 1.5rem 2rem;
+}
+
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
@@ -95,6 +100,11 @@ body {
 
 .subtitle, .title {
   word-break: break-word;
+}
+
+.subtitle.left{
+  text-align: left;
+  padding: 1rem 1.5rem;
 }
 
 .title.is-1{

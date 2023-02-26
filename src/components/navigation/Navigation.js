@@ -1,18 +1,53 @@
 
+import { Button, Grid, IconButton, ListItem, Toolbar, Typography} from "@mui/material";
+import Box from "@mui/material/Box";
+import AppBar from "@mui/material/AppBar";
 import {Component, Fragment} from "react";
 
+const Logo = () => (
+    <div className="container">
+        <p>Jeongsol Kim</p>
+    </div>
+)
 
-const NaviBlock  = () => (
-    <section className="section">
-        <p>Navigation</p>
-    </section>
+const NaviBlock2 = () => (
+        <Box sx={{flexGrow: 1}}>
+            <AppBar position='static'>
+                <Toolbar sx={{mx: "auto", width:"100%", maxWidth: 800}}>
+                    <IconButton size="large"
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                                sx={{mr: 2}}>
+                    <Typography variant="h6" component="div" sx={{flexGlow:1}}>
+                        Jeongsol Kim
+                    </Typography>
+                    </IconButton>
+                    <Button color="inherit">
+                        About
+                    </Button>
+                    <Button color="inherit">
+                        Update
+                    </Button>
+                    <Button color="inherit">
+                        Publications
+                    </Button>
+                    <Button color="inherit">
+                        Conferences
+                    </Button>
+                    <Button color="inherit">
+                        Awards
+                    </Button>
+                </Toolbar>
+            </AppBar>
+        </Box>
 )
 
 export default class Navigation extends Component{
     render(){
         return (
             <Fragment>
-                <NaviBlock />
+                <NaviBlock2 />
             </Fragment>
         )
     }
