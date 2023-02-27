@@ -11,7 +11,7 @@
 
 <br />
 
-:blub: Trying to learn various programming languages such as Javascript, C++ and C#.
+:bulb: Trying to learn various programming languages such as Javascript, C++ and C#.
 
 <br />
 
