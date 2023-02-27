@@ -8,6 +8,6 @@
 #
 
 <a>
-<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeongsol-kim&layout=compact&theme=dracula" width="49%">
-<img align="center" src="https://github-readme-stats.vercel.app/api?username=jeongsol-kim&show_icons=true&theme=dracula" width="49%">
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeongsol-kim&layout=compact&theme=dracula" width="45%">
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=jeongsol-kim&show_icons=true&theme=dracula" width="45%">
 </a>
