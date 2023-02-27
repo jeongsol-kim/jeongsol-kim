@@ -27,10 +27,10 @@ const PublicationBlock  = () => (
                                     subtitle={<span>{item.where}</span>}
                                     actionIcon={
                                         <>
-                                        <IconButton href={item.code}>
+                                        <IconButton href={item.code} style={{color: "white"}}>
                                             <GitHubIcon />
                                         </IconButton>
-                                        <IconButton href={item.paper}>
+                                        <IconButton href={item.paper} style={{color: "white"}}>
                                             <ArticleOutlinedIcon />
                                         </IconButton>
                                         </>
