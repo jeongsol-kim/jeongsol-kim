@@ -3,8 +3,6 @@ import {Grid, Card, List, ListItem, ListItemAvatar, ListItemText, Avatar, Button
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import ArticleIcon from '@mui/icons-material/Article';
 
 export default class About extends Component{
     render(){
