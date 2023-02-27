@@ -18,6 +18,7 @@
 <br />
 
 #
+## Recent activities
 <br />
 <div align=center>
 <a>
@@ -25,3 +26,23 @@
 <img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api?username=jeongsol-kim&show_icons=true&theme=dracula" width="45%">
 </a>
 </div>
+
+<br />
+
+#
+
+<br />
+
+## Check repositories for recent publications
+
+<br />
+
+<div align="center">
+<a href="https://github.com/DPS2022/diffusion-posterior-sampling">
+<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api/pin/?username=DPS2022&repo=diffusion-posterior-sampling">
+<a />
+<a href="https://github.com/TAVIT2022/TAViT">
+<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api/pin/?username=TAVIT2022&repo=TAViT">
+<a />
+
+<div />
