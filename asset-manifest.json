@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/diffusion-posterior-sampling-page/static/css/main.3ee8ab39.css",
+    "main.js": "/diffusion-posterior-sampling-page/static/js/main.d9167ad1.js",
+    "static/js/787.d44239ce.chunk.js": "/diffusion-posterior-sampling-page/static/js/787.d44239ce.chunk.js",
+    "static/media/AppleSDGothicNeo.ttf": "/diffusion-posterior-sampling-page/static/media/AppleSDGothicNeo.0ed4f3cf8e0a053dbc9c.ttf",
+    "index.html": "/diffusion-posterior-sampling-page/index.html",
+    "main.3ee8ab39.css.map": "/diffusion-posterior-sampling-page/static/css/main.3ee8ab39.css.map",
+    "main.d9167ad1.js.map": "/diffusion-posterior-sampling-page/static/js/main.d9167ad1.js.map",
+    "787.d44239ce.chunk.js.map": "/diffusion-posterior-sampling-page/static/js/787.d44239ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ee8ab39.css",
+    "static/js/main.d9167ad1.js"
+  ]
+}
