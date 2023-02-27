@@ -1,7 +1,6 @@
 import {Component, Fragment} from "react";
 import { IconButton } from "@mui/material";
 import { VscGithub } from "react-icons/vsc"
-import {FaFilePdf} from "react-icons/fa"
 
 const LinkButton = (props) => (
     <IconButton href={props.link}>

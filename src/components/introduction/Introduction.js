@@ -1,5 +1,5 @@
 import {Component, Fragment} from "react";
-import {Stack, ListItem, Card} from "@mui/material";
+import {Card} from "@mui/material";
 
 
 export default class Introduction extends Component{
