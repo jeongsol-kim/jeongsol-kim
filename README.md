@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=transparent&color=black&height=300&section=header&text=Jeongsol%20Kim&fontSize=50)
+![header](https://capsule-render.vercel.app/api?type=transparent&color=black&height=300&section=header&text=Jeongsol%20Kim&desc=@KAIST&descAlign=71&descAlignY=63&fontSize=70)
 
 #
 
