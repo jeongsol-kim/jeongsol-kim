@@ -7,6 +7,14 @@
 
 <br />
 
+:punch: Main programming language is Python. Love Pytorch and JAX by google.
+
+<br />
+
+:blub: Trying to learn various programming languages such as Javascript, C++ and C#.
+
+<br />
+
 :mag_right: Visit [my website](https://jeongsol.dev) if you're interested in!
 
 <br />
