@@ -3,17 +3,17 @@
 #
 <br />
 
-### 😄 Hello, I'm a Ph.D candidate at Dept. of Bio and Brain Engineering, Korea Advanced Inst. of Science & Technology (KAIST).
+😄 Hello, I'm a Ph.D candidate at Dept. of Bio and Brain Engineering, Korea Advanced Inst. of Science & Technology (KAIST).
 
 <br />
 
-#### :punch: Main programming language is Python. Love Pytorch and JAX by google.
+:punch: Main programming language is Python. Love Pytorch and JAX by google.
 
 
-#### :bulb: Trying to learn various programming languages such as Javascript, C++ and C#.
+:bulb: Trying to learn various programming languages such as Javascript, C++ and C#.
 
 
-#### :mag_right: Visit [my website](https://jeongsol.dev) if you're interested in!
+:mag_right: Visit [my website](https://jeongsol.dev) if you're interested in!
 
 <br />
 
