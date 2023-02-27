@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d58396f.css",
-    "main.js": "/static/js/main.37eac922.js",
-    "static/js/787.d44239ce.chunk.js": "/static/js/787.d44239ce.chunk.js",
-    "static/media/AppleSDGothicNeo.ttf": "/static/media/AppleSDGothicNeo.0ed4f3cf8e0a053dbc9c.ttf",
-    "index.html": "/index.html",
-    "main.1d58396f.css.map": "/static/css/main.1d58396f.css.map",
-    "main.37eac922.js.map": "/static/js/main.37eac922.js.map",
-    "787.d44239ce.chunk.js.map": "/static/js/787.d44239ce.chunk.js.map"
+    "main.css": "/jeongsol-kim/static/css/main.792572e7.css",
+    "main.js": "/jeongsol-kim/static/js/main.c82d3a87.js",
+    "static/js/787.d44239ce.chunk.js": "/jeongsol-kim/static/js/787.d44239ce.chunk.js",
+    "static/media/AppleSDGothicNeo.ttf": "/jeongsol-kim/static/media/AppleSDGothicNeo.0ed4f3cf8e0a053dbc9c.ttf",
+    "index.html": "/jeongsol-kim/index.html",
+    "main.792572e7.css.map": "/jeongsol-kim/static/css/main.792572e7.css.map",
+    "main.c82d3a87.js.map": "/jeongsol-kim/static/js/main.c82d3a87.js.map",
+    "787.d44239ce.chunk.js.map": "/jeongsol-kim/static/js/787.d44239ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d58396f.css",
-    "static/js/main.37eac922.js"
+    "static/css/main.792572e7.css",
+    "static/js/main.c82d3a87.js"
   ]
 }
