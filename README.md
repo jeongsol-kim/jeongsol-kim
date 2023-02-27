@@ -13,7 +13,7 @@
 :bulb: Trying to learn various programming languages such as Javascript, C++ and C#.
 
 
-:mag_right: Visit [my website](https://jeongsol.dev) if you're interested in!
+:mag_right: Visit [my website](https://jeongsol.dev) if you're interested in :)
 
 <br />
 
