@@ -7,6 +7,10 @@
 
 <br />
 
+:mag_right: Visit [my website](https://jeongsol.dev) if you're interested in!
+
+<br />
+
 #
 <br />
 <div align=center>
