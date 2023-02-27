@@ -1,11 +1,6 @@
 # Jeongsol Kim
 
-
-Dept. of Bio and Brain Engineering / Ph.D Candidate
-
-Korea Advanced Inst. of Science & Technology (KAIST)
-
-291 Daehak-ro, Yuseong-gu, Daejeong 34141
+Hello, I'm an Ph.D candidate at Dept. of Bio and Brain Engineering, Korea Advanced Inst. of Science & Technology (KAIST).
 
 Tel: 042-350-4360
 
