@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "AppleSDGothic";
+  src: url("./fonts/AppleSDGothicNeo.ttf");
+}
+
 .App {
   text-align: center;
 }
@@ -71,6 +76,7 @@ body {
   color: #4a4a4a;
   font-size: 1em;
   font-weight: 400;
+  font-family: "AppleSDGothic";
   line-height: 1.5;
 }
 
