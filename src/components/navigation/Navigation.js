@@ -6,7 +6,7 @@ import {Component, Fragment} from "react";
 
 const NaviBlock2 = () => (
         <Box sx={{flexGrow: 1}}>
-            <AppBar position='static' style={{backgroundColor:"#03C988"}}>
+            <AppBar position='fixed' style={{backgroundColor:"#03C988"}}>
                 <Toolbar sx={{mx: "auto", width:"100%", maxWidth: 800}}>
                     <IconButton size="large"
                                 edge="start"
@@ -42,6 +42,8 @@ export default class Navigation extends Component{
         return (
             <Fragment>
                 <NaviBlock2 />
+                {/* To avoid overlapped content by the appbar */}
+                <Toolbar>{/* content */}</Toolbar>
             </Fragment>
         )
     }
