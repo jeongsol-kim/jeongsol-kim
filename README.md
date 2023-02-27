@@ -6,7 +6,7 @@
 
 <div align=center>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jeongsol-kim&layout=compact&theme=dracula)](https://github.com/metleeha)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jeongsol-kim&layout=compact&theme=dracula)](https://github.com/jeongsol-kim)
 
 ![Jeongsol's github stats](https://github-readme-stats.vercel.app/api?username=jeongsol-kim&show_icons=true&theme=dracula)
 </div>
