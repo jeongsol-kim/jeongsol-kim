@@ -10,9 +10,9 @@ const PublicationBlock  = () => (
             <div className="columns is-centered">
                 <div className="column is-four-fifths">
                     <Card>
-                    <h4 className="subtitle left">
+                    <h2 style={{margin: '1em 1em', textAlign:'left'}}>
                         Publications
-                    </h4>
+                    </h2>
                     <ImageList cols={1}>
                         {itemData.map((item) => (
                             <ImageListItem key={item.img} style={{padding: "1rem"}}>
