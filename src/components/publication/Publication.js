@@ -49,6 +49,14 @@ const PublicationBlock  = () => (
 
 const itemData = [
     {
+        img: process.env.PUBLIC_URL + '/imgs/blinddps',
+        title: 'Parallel Diffusion Models of Operator and Image for Bilnd Inverse Problems',
+        where: 'Hyungjin Chung*, Jeongsol Kim*, Sehui Kim, Jong Chul Ye (*co-first) / CVPR 2023',
+        code: '',
+        paper: 'https://arxiv.org/abs/2211.10656'
+
+    },
+    {
         img: process.env.PUBLIC_URL + '/imgs/dps',
         title: 'Diffusion Posterior Sampling for General Noisy Inverse Problems',
         where: 'Hyungjin Chung*, Jeongsol Kim*, Michael T.McCann, Marc L. Klasky, Jong Chul Ye (*co-first) / ICLR 2023, spotlight',
