@@ -19,10 +19,13 @@ const NewsBlock  = () => (
                         <Grid item>
                             <List>
                                 <ListItem>
+                                    (2/28) A paper is accepted to CVPR 2023
+                                </ListItem>
+                                <ListItem>
                                     (2/6) Got Samsung Huantech gold award
                                 </ListItem>
                                 <ListItem>
-                                    (1/21) A paper accepted to ICLR 2023
+                                    (1/21) A paper is accepted to ICLR 2023
                                 </ListItem>
                                 <ListItem>
                                     (12/6) Publish a new repository for phase retrieval algorithems
