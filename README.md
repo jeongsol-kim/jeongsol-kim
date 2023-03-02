@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=transparent&color=black&height=300&section=header&text=Jeongsol%20Kim&desc=@KAIST&descAlign=71&descAlignY=63&fontSize=70)
+![header](https://capsule-render.vercel.app/api?type=transparent&color=black&height=300&section=header&text=Jeongsol%20Kim&desc=@KAIST&descAlign=71&descAlignY=63&fontSize=60)
 
 #
 <br />
@@ -21,8 +21,8 @@
 <br />
 <div align=center>
 <a>
-<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api/top-langs/?username=jeongsol-kim&layout=compact&theme=dracula" width="45%">
-<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api?username=jeongsol-kim&show_icons=true&theme=dracula" width="45%">
+<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api/top-langs/?username=jeongsol-kim&layout=compact&theme=dracula" width="30%">
+<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api?username=jeongsol-kim&show_icons=true&theme=dracula" width="40%">
 </a>
 </div>
 
