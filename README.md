@@ -17,7 +17,6 @@
 
 <br />
 
-#
 ## Recent activities
 <br />
 <div align=center>
@@ -29,7 +28,6 @@
 
 <br />
 
-#
 
 <br />
 
