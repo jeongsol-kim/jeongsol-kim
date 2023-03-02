@@ -37,10 +37,10 @@
 
 <div align="center">
 <a href="https://github.com/DPS2022/diffusion-posterior-sampling">
-<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api/pin/?username=DPS2022&repo=diffusion-posterior-sampling">
+<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api/pin/?username=DPS2022&repo=diffusion-posterior-sampling" width="40%">
 <a />
 <a href="https://github.com/TAVIT2022/TAViT">
-<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api/pin/?username=TAVIT2022&repo=TAViT">
+<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api/pin/?username=TAVIT2022&repo=TAViT" width="46%">
 <a />
 
 <div />
