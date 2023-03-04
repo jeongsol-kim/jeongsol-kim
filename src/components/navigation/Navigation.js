@@ -10,7 +10,7 @@ import * as React from "react";
 import { useMediaQuery } from "react-responsive";
 import MenuIcon from '@mui/icons-material/Menu';
 
-export const Mobile = ({children}) => {
+const Mobile = ({children}) => {
     const isMobile = useMediaQuery({
         query: "(max-width:768px)"
     });
@@ -18,7 +18,7 @@ export const Mobile = ({children}) => {
     return <>{isMobile && children}</>
 }
 
-export const PC = ({children}) => {
+const PC = ({children}) => {
     const isPc = useMediaQuery({
         query: "(min-width:769px)"
     });
@@ -26,15 +26,23 @@ export const PC = ({children}) => {
     return <>{isPc && children}</>
 }
 
-export function FadeMenu() {
+const FadeMenu = forwardRef((props, ref) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClose = () => {
+  const handleClose = (ref) => {
     setAnchorEl(null);
+    scrollDownMobile(ref);
   };
+
+  const scrollDownMobile = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop - 50,
+      behavior: 'smooth',
+    });
+  }
 
   return (
     <div>
@@ -57,19 +65,19 @@ export function FadeMenu() {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <MenuItem onClick={handleClose}>About</MenuItem>
-        <MenuItem onClick={handleClose}>Education</MenuItem>
-        <MenuItem onClick={handleClose}>Update</MenuItem>
-        <MenuItem onClick={handleClose}>Publication</MenuItem>
-        <MenuItem onClick={handleClose}>Award</MenuItem>
+        <MenuItem onClick={() => handleClose(ref.about)}>About</MenuItem>
+        <MenuItem onClick={() => handleClose(ref.edu)}>Education</MenuItem>
+        <MenuItem onClick={() => handleClose(ref.news)}>Update</MenuItem>
+        <MenuItem onClick={() => handleClose(ref.pub)}>Publication</MenuItem>
+        <MenuItem onClick={() => handleClose(ref.award)}>Award</MenuItem>
       </Menu>
     </div>
   );
-}
+});
 
 const scrollDown = (ref) => {
   window.scrollTo({
-    top: ref.current.offsetTop,
+    top: ref.current.offsetTop - 70, // margin for navibar
     behavior: 'smooth',
   });
 };
@@ -105,7 +113,7 @@ const NaviBlock2 = forwardRef((props, ref) => (
                         </Button>
                     </PC>
                     <Mobile>
-                        <FadeMenu />
+                        <FadeMenu ref={ref}/>
                     </Mobile>
                 </Toolbar>
             </AppBar>
