@@ -1,9 +1,9 @@
 import {Card} from "@mui/material";
-import {Component, Fragment} from "react";
+import {forwardRef, Fragment} from "react";
 
 
-const AwardBlock = () => (
-    <section className="section">
+const AwardBlock = forwardRef((props, ref) => (
+    <section className="section" ref={ref}>
         <div className="container is-max-desktop">
             <div className="columns is-centered has-text-centered">
                 <div className="column is-four-fifths">
@@ -16,14 +16,14 @@ const AwardBlock = () => (
             </div>
         </div>
     </section>
-)
+));
 
-export default class Awards extends Component{
-    render(){
-        return (
-            <Fragment>
-                <AwardBlock />
-            </Fragment>
-        )
-    }
-}
+const Awards = forwardRef((props, ref) => {
+    return (
+        <Fragment>
+            <AwardBlock ref={ref} />
+        </Fragment>
+    );
+});
+
+export default Awards;

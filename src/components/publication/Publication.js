@@ -1,11 +1,11 @@
 
 import { Card, IconButton, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
-import {Component, Fragment} from "react";
+import {Fragment, forwardRef} from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 
-const PublicationBlock  = () => (
-    <section className="section">
+const PublicationBlock  = forwardRef((props, ref) => (
+    <section className="section" ref={ref}>
         <div className="container is-max-desktop">
             <div className="columns is-centered">
                 <div className="column is-four-fifths">
@@ -45,7 +45,7 @@ const PublicationBlock  = () => (
             </div>
         </div>
     </section>
-)
+));
 
 const itemData = [
     {
@@ -87,12 +87,12 @@ const itemData = [
     }
 ]
 
-export default class Publication extends Component{
-    render(){
-        return (
-            <Fragment>
-                <PublicationBlock />
-            </Fragment>
-        )
-    }
-}
+const Publication = forwardRef((props, ref) => {
+    return (
+        <Fragment>
+            <PublicationBlock ref={ref}/>
+        </Fragment>
+    );
+});
+
+export default Publication;

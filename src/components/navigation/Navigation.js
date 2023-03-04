@@ -5,7 +5,7 @@ import AppBar from "@mui/material/AppBar";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
-import {Component, Fragment} from "react";
+import {Fragment, forwardRef} from "react";
 import * as React from "react";
 import { useMediaQuery } from "react-responsive";
 import MenuIcon from '@mui/icons-material/Menu';
@@ -67,7 +67,14 @@ export function FadeMenu() {
   );
 }
 
-const NaviBlock2 = () => (
+const scrollDown = (ref) => {
+  window.scrollTo({
+    top: ref.current.offsetTop,
+    behavior: 'smooth',
+  });
+};
+
+const NaviBlock2 = forwardRef((props, ref) => (
         <Box sx={{flexGrow: 1}}>
             <AppBar position='fixed' style={{backgroundColor:"#03C988"}}>
                 <Toolbar sx={{mx: "auto", width:"100%", maxWidth: 800, justifyContent: "space-around"}}>
@@ -81,19 +88,19 @@ const NaviBlock2 = () => (
                     </Typography>
                     </IconButton>
                     <PC>
-                        <Button color="inherit">
+                        <Button color="inherit" onClick={() => scrollDown(ref.about)}>
                             About
                         </Button>
-                        <Button color="inherit">
+                        <Button color="inherit" onClick={() => scrollDown(ref.edu)}>
                             Education
                         </Button>
-                        <Button color="inherit">
+                        <Button color="inherit" onClick={() => scrollDown(ref.news)}>
                             Update
                         </Button>
-                        <Button color="inherit">
+                        <Button color="inherit" onClick={() => scrollDown(ref.pub)}>
                             Publications
                         </Button>
-                        <Button color="inherit">
+                        <Button color="inherit" onClick={() => scrollDown(ref.award)}>
                             Awards
                         </Button>
                     </PC>
@@ -103,16 +110,18 @@ const NaviBlock2 = () => (
                 </Toolbar>
             </AppBar>
         </Box>
-)
+));
 
-export default class Navigation extends Component{
-    render(){
-        return (
-            <Fragment>
-                <NaviBlock2 />
-                {/* To avoid overlapped content by the appbar */}
-                <Toolbar>{/* content */}</Toolbar>
-            </Fragment>
-        )
-    }
-}
+
+const Navigation = forwardRef((props, ref) => {
+  // console.log(this.ref)
+  return (
+      <Fragment>
+          <NaviBlock2 ref={ref}/>
+          {/* To avoid overlapped content by the appbar */}
+          <Toolbar>{/* content */}</Toolbar>
+      </Fragment>
+  )
+});
+
+export default Navigation;

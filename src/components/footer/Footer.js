@@ -11,7 +11,7 @@ const LinkButton = (props) => (
 const FooterBlock  = () => (
     <section className="footer">
         <div className="container">
-            <div classNname="content has-text-centered">
+            <div className="content has-text-centered">
                 <LinkButton link={"."} icon={<VscGithub />} text="Github"/>
             </div>
             <div className="columns is-centered">

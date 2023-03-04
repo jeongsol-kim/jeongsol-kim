@@ -1,5 +1,5 @@
 import {Card} from "@mui/material"
-import {Component, Fragment} from "react";
+import {forwardRef, Fragment} from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import SchoolIcon from '@mui/icons-material/School';
@@ -56,8 +56,8 @@ const TimeLine = () => (
 </VerticalTimeline>    
 )
 
-const EducationBlock  = () => (
-    <section className="section">
+const EducationBlock = forwardRef((props, ref) => (
+    <section className="section" ref={ref}>
         <div className="container is-max-desktop">
             <div className="columns is-centered has-text-centered">
                 <div className="column is-four-fifths">
@@ -71,14 +71,15 @@ const EducationBlock  = () => (
             </div>
         </div>
     </section>
-)
+))
 
-export default class Education extends Component{
-    render(){
-        return (
-            <Fragment>
-                <EducationBlock />
-            </Fragment>
-        )
-    }
-}
+
+const Education = forwardRef((props, ref) => {
+  return (
+    <Fragment>
+        <EducationBlock ref={ref}/>
+    </Fragment>
+  );
+})
+
+export default Education;

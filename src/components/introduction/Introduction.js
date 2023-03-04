@@ -3,10 +3,15 @@ import {Card} from "@mui/material";
 
 
 export default class Introduction extends Component{
+    constructor(props){
+        super(props)
+        this.ref = props.ref
+    }
+
     render(){
         return (
             <Fragment>
-                <section className="section">
+                <section className="section" ref={this.ref}>
                     <div className="container is-max-desktop">
                     <div className="columns is-centered has-text-centered">
                         <div className="column is-four-fifths">

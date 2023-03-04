@@ -1,10 +1,10 @@
 
 import { Card, Divider, Grid, List, ListItem } from "@mui/material";
-import {Component, Fragment} from "react";
+import {forwardRef, Fragment} from "react";
 
 
-const NewsBlock  = () => (
-    <section className="section">
+const NewsBlock  = forwardRef((props, ref) => (
+    <section className="section" ref={ref}>
         <div className="container is-max-desktop">
         <div className="columns is-centered has-text-centered">
             <div className="column is-four-fifths">
@@ -39,14 +39,14 @@ const NewsBlock  = () => (
         </div>
         </div>
     </section>
-)
+));
 
-export default class News extends Component{
-    render(){
-        return (
-            <Fragment>
-                <NewsBlock />
-            </Fragment>
-        )
-    }
-}
+const News = forwardRef((props, ref) => {
+    return (
+        <Fragment>
+            <NewsBlock ref={ref}/>
+        </Fragment>
+    );
+});
+
+export default News;
