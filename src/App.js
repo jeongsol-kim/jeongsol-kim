@@ -1,45 +1,25 @@
-import './App.css';
-
-import Navigation from './components/navigation/Navigation';
-import Introduction from './components/introduction/Introduction';
-import About from './components/about/About';
-import News from './components/news/News';
-import Publication from './components/publication/Publication';
-import Education from './components/education/Education';
-// import Conference from './components/conference/Conference';
-import Awards from './components/award/Award';
-import Footer from './components/footer/Footer';
-import { useRef } from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "./theme/GlobalStyle";
+import { lightTheme, darkTheme } from "./theme/theme";
+import Home from "./components/home";
+import Publication from "./components/publication";
+import Sidework from "./components/sidework";
 
 function App() {
-  const introSection = useRef(null)
-  const aboutSection = useRef(null)
-  const eduSection = useRef(null)
-  const newSection = useRef(null)
-  const pubSection = useRef(null)
-  const awardSection = useRef(null)
-
-  const refs = {
-    'intro': introSection,
-    'about': aboutSection,
-    'edu': eduSection,
-    'news': newSection,
-    'pub' : pubSection,
-    'award': awardSection
-  };
+  const isDarkmode = true;
 
   return (
-    <div>
-      <Navigation ref={refs}/>
-      <Introduction ref={introSection}/>
-      <About ref={aboutSection}/>
-      <Education ref={eduSection}/>
-      <News ref={newSection}/>
-      <Publication ref={pubSection}/>
-      {/* <Conference /> */}
-      <Awards ref={awardSection}/>
-      <Footer />
-    </div>
+    <BrowserRouter>
+    <ThemeProvider theme={isDarkmode ? darkTheme: lightTheme}>
+    <GlobalStyle />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/publication" element={<Publication />}/>
+        <Route path="/sidework" element={<Sidework />}/>
+      </Routes>
+    </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
