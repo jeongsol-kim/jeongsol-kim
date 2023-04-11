@@ -1,13 +1,11 @@
 import { Button, IconButton, Toolbar, Typography} from "@mui/material";
-import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
-import {Fragment, forwardRef} from "react";
 import * as React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Link } from "react-router-dom";
+import { Link as RRDLink, useLocation} from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 import styled from "styled-components";
 
@@ -27,6 +25,19 @@ const PC = ({children}) => {
 
     return <>{isPc && children}</>
 }
+
+const Link = ({isActive, children, ...props}) => (
+    <RRDLink {...props}>{children}</RRDLink>
+)
+
+const StyledLink = styled(Link)`
+    color: #FFFFFF;
+    text-decoration: none;
+	padding: 0 1rem;
+	margin: 0;
+	text-align: center;
+    font-weight: ${(props) => (props.isActive ? "bold" : "normal")};
+`;
 
 const FadeMenu = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -60,13 +71,13 @@ const FadeMenu = () => {
           TransitionComponent={Fade}
         >
           <MenuItem>
-            <Link to="/">HOME</Link>
+            <StyledLink to="/">HOME</StyledLink>
           </MenuItem>
           <MenuItem>
-            <Link to="/publication">PUBLICATION</Link>
+            <StyledLink to="/publication">PUBLICATION</StyledLink>
           </MenuItem>
           <MenuItem>
-          <Link to="/sidework">SIDE-WORK</Link>
+          <StyledLink to="/sidework">SIDE-WORK</StyledLink>
           </MenuItem>
         </Menu>
       </div>
@@ -86,9 +97,9 @@ const NaviContent = () => (
         </Typography>
         </IconButton>
         <PC>
-            <Link to="/">HOME</Link>
-            <Link to="/publication">PUBLICATION</Link>
-            <Link to="/sidework">SIDE-WORK</Link>
+            <StyledLink to="/">HOME</StyledLink>
+            <StyledLink to="/publication">PUBLICATION</StyledLink>
+            <StyledLink to="/sidework">SIDE-WORK</StyledLink>
         </PC>
         <Mobile>
             <FadeMenu />
