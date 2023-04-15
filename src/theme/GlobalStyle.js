@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         color: ${({ theme })=> theme.textColor};
         position: relative;
         display: block;
-        width: 100%;
+        width: 90%;
         height: 100%;
         line-height: 1.5;
         margin: 0 auto;
