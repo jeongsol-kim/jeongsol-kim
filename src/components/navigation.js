@@ -31,12 +31,12 @@ const Link = ({isActive, children, ...props}) => (
 )
 
 const StyledLink = styled(Link)`
-    color: #FFFFFF;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 	padding: 0 1rem;
 	margin: 0;
 	text-align: center;
-    font-weight: ${(props) => (props.isActive ? "bold" : "normal")};
+  font-weight: ${(props) => (props.isActive ? "bold" : "normal")};
 `;
 
 const FadeMenu = () => {
@@ -84,47 +84,33 @@ const FadeMenu = () => {
     );
 };
 
-
-const NaviContent = () => (
-    <div>
-        <IconButton size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    sx={{mr: 15}}>
-        <Typography variant="h6" component="div">
-            Jeongsol Kim
-        </Typography>
-        </IconButton>
-        <PC>
-            <StyledLink to="/">HOME</StyledLink>
-            <StyledLink to="/publication">PUBLICATION</StyledLink>
-            <StyledLink to="/sidework">SIDE-WORK</StyledLink>
-        </PC>
-        <Mobile>
-            <FadeMenu />
-        </Mobile>
-    </div>
-)
-
-
 const StyledToolBar = styled(Toolbar)`
     align-content: space-around;
-`
-
-const StyledAppBar = styled(AppBar)`
-    background: #FFFFFF
 `
 
 const Navigation = () => {
     return (
         <div>
-            <StyledAppBar>
-                <StyledToolBar>
-                    <NaviContent />
-                </StyledToolBar>
-            </StyledAppBar>
-            <Toolbar />
+          <StyledToolBar>
+            <IconButton size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        sx={{mr: 15}}>
+            <Typography variant="h6" component="div">
+                Jeongsol Kim
+            </Typography>
+            </IconButton>
+            <PC>
+                <StyledLink to="/">HOME</StyledLink>
+                <StyledLink to="/publication">PUBLICATION</StyledLink>
+                <StyledLink to="/sidework">SIDE-WORK</StyledLink>
+            </PC>
+            <Mobile>
+                <FadeMenu />
+            </Mobile>
+          </StyledToolBar>
+          <Toolbar />
         </div>
     );
 }
