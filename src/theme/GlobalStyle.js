@@ -22,5 +22,9 @@ export const GlobalStyle = createGlobalStyle`
         word-break: keep-all;
         work-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
+
+        @media screen and (max-width:768px) {
+            font-size: 12px
+        }
     }
 `

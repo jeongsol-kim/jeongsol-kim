@@ -1,13 +1,15 @@
 import { Button, IconButton, Toolbar, Typography} from "@mui/material";
-import AppBar from "@mui/material/AppBar";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
 import * as React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Link as RRDLink, useLocation} from "react-router-dom";
+import { Link as RRDLink } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 import styled from "styled-components";
+import { Style, VerticalSplitOutlined } from "@mui/icons-material";
 
 
 const Mobile = ({children}) => {
@@ -33,13 +35,14 @@ const Link = ({isActive, children, ...props}) => (
 const StyledLink = styled(Link)`
   color: inherit;
   text-decoration: none;
-	padding: 0 1rem;
+	padding: 0;
 	margin: 0;
 	text-align: center;
   font-weight: ${(props) => (props.isActive ? "bold" : "normal")};
 `;
 
-const FadeMenu = () => {
+
+const FadeMenu = ({isDarkMode, onClick}) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -79,6 +82,13 @@ const FadeMenu = () => {
           <MenuItem>
           <StyledLink to="/sidework">SIDE-WORK</StyledLink>
           </MenuItem>
+          <MenuItem>
+          <Button>
+            onClick={onClick}
+            style={{color: 'inherit', fontSize: '1rem'}}
+            {isDarkMode ? "Light Mode": "Dark Mode"}
+          </Button>
+          </MenuItem>
         </Menu>
       </div>
     );
@@ -88,7 +98,7 @@ const StyledToolBar = styled(Toolbar)`
     justify-content: space-between;
 `
 
-const Navigation = () => (
+const Navigation = ({isDarkMode, toggleDarkMode}) => (
   <div>
     <StyledToolBar>
       <IconButton size="large"
@@ -100,14 +110,17 @@ const Navigation = () => (
           Jeongsol Kim
         </Typography>
       </IconButton>
-      <div className="links">
+      <div className="links" style={{display: 'flex', justifyContent:'space-between'}}>
         <PC>
           <StyledLink to="/">HOME</StyledLink>
           <StyledLink to="/publication">PUBLICATION</StyledLink>
           <StyledLink to="/sidework">SIDE-WORK</StyledLink>
+          <IconButton onClick={toggleDarkMode} color="inherit">
+            {isDarkMode ? <DarkModeIcon /> : <LightModeIcon />}
+          </IconButton>
         </PC>
         <Mobile>
-          <FadeMenu />
+          <FadeMenu isDarkMode={isDarkMode} onClick={toggleDarkMode}/>
         </Mobile>
       </div>
     </StyledToolBar>

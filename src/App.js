@@ -6,15 +6,20 @@ import Navigation from "./components/navigation";
 import Home from "./components/home";
 import Publication from "./components/publication";
 import Sidework from "./components/sidework";
+import { useState } from "react";
 
 function App() {
-  const isDarkmode = true;
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prev) => !prev)
+  }
 
   return (
     <BrowserRouter>
-    <ThemeProvider theme={isDarkmode ? darkTheme: lightTheme}>
+    <ThemeProvider theme={isDarkMode ? darkTheme: lightTheme}>
     <GlobalStyle />
-      <Navigation />
+      <Navigation isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/publication" element={<Publication />}/>
