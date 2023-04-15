@@ -85,7 +85,7 @@ const FadeMenu = () => {
 };
 
 const StyledToolBar = styled(Toolbar)`
-    align-content: space-around;
+    justify-content: space-between;
 `
 
 const Navigation = () => {
@@ -101,14 +101,16 @@ const Navigation = () => {
                 Jeongsol Kim
             </Typography>
             </IconButton>
-            <PC>
-                <StyledLink to="/">HOME</StyledLink>
-                <StyledLink to="/publication">PUBLICATION</StyledLink>
-                <StyledLink to="/sidework">SIDE-WORK</StyledLink>
-            </PC>
-            <Mobile>
-                <FadeMenu />
-            </Mobile>
+            <div className="links">
+              <PC>
+                  <StyledLink to="/">HOME</StyledLink>
+                  <StyledLink to="/publication">PUBLICATION</StyledLink>
+                  <StyledLink to="/sidework">SIDE-WORK</StyledLink>
+              </PC>
+              <Mobile>
+                  <FadeMenu />
+              </Mobile>
+            </div>
           </StyledToolBar>
           <Toolbar />
         </div>
