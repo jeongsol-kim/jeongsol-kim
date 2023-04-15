@@ -88,33 +88,31 @@ const StyledToolBar = styled(Toolbar)`
     justify-content: space-between;
 `
 
-const Navigation = () => {
-    return (
-        <div>
-          <StyledToolBar>
-            <IconButton size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{mr: 15}}>
-            <Typography variant="h6" component="div">
-                Jeongsol Kim
-            </Typography>
-            </IconButton>
-            <div className="links">
-              <PC>
-                  <StyledLink to="/">HOME</StyledLink>
-                  <StyledLink to="/publication">PUBLICATION</StyledLink>
-                  <StyledLink to="/sidework">SIDE-WORK</StyledLink>
-              </PC>
-              <Mobile>
-                  <FadeMenu />
-              </Mobile>
-            </div>
-          </StyledToolBar>
-          <Toolbar />
-        </div>
-    );
-}
+const Navigation = () => (
+  <div>
+    <StyledToolBar>
+      <IconButton size="large"
+        edge="start"
+        color="inherit"
+        aria-label="menu"
+        sx={{ mr: 15 }}>
+        <Typography variant="h6" component="div">
+          Jeongsol Kim
+        </Typography>
+      </IconButton>
+      <div className="links">
+        <PC>
+          <StyledLink to="/">HOME</StyledLink>
+          <StyledLink to="/publication">PUBLICATION</StyledLink>
+          <StyledLink to="/sidework">SIDE-WORK</StyledLink>
+        </PC>
+        <Mobile>
+          <FadeMenu />
+        </Mobile>
+      </div>
+    </StyledToolBar>
+    <Toolbar />
+  </div>
+)
 
 export default Navigation
