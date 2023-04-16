@@ -11,7 +11,7 @@ const Profile = () => {
                 className='profile'
                 src={profile}
                 alt='Profile'
-                width={'50%'}
+                width='50%'
                 />
         </div>
     )
@@ -19,7 +19,14 @@ const Profile = () => {
 
 const Information = () => {
     return (
-        <div style={{textAlign: 'center', justifyContent: 'center'}}>
+        <div
+            style={{textAlign: 'center', 
+                    right: '0',
+                    left: '0',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    width: '70%'
+                    }}>
             <h2
             className='hello'
             style={{
@@ -32,19 +39,27 @@ const Information = () => {
                 <GitHubIcon />
                 <ArticleIcon />
             </Stack>
-            <p style={{padding: '1rem 0'}}>
-                Let's me introduce myself.
+            <p style={{padding: '1rem 0', textAlign: 'justify'}}>
+                Currently, I'm a Ph.D candidate at Department of Bio and Brain
+                Engineering, Korea Advanced Institute of Science and Technology,
+                South Korea. My research interests are machine learning including 
+                federated learning, diffusion-based generative model, and application to optics. 
+                My main programming language is Python, but I also enjoy playing with MatLab, 
+                C#, C++ and Javascript.
             </p>
+            <Stack direction='row'>
+                
+            </Stack>
         </div>
     )
 }
 
 const Home = () => {
     return (
-        <>
+        <div style={{justifyContent: 'center'}}> 
             <Profile />
             <Information />
-        </>
+        </div>
     )
 }
 
