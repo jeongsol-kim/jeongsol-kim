@@ -1,7 +1,48 @@
-import { Badge, Stack } from '@mui/material'
+import { Stack } from '@mui/material'
 import profile from '../assets/profile.jpeg'
 import GitHubIcon from '@mui/icons-material/GitHub'; 
 import ArticleIcon from '@mui/icons-material/Article';
+import EmailIcon from '@mui/icons-material/Email';
+import Popover from '@mui/material/Popover';
+import Typography from '@mui/material/Typography';
+import { useState } from 'react';
+
+const EmailPopOver = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
+
+  return (
+    <div style={{display: 'inline-block'}}>
+        <EmailIcon onClick={handleClick}/> 
+        <Popover
+            id={id}
+            open={open}
+            anchorEl={anchorEl}
+            onClose={handleClose}
+            anchorOrigin={{
+                vertical: 'center',
+                horizontal: 'right',
+              }}
+              transformOrigin={{
+                vertical: 'center',
+                horizontal: 'left',
+              }}
+        >
+            <Typography sx={{ p: 2 }}>jeongsol@kaist.ac.kr</Typography>
+        </Popover>
+    </div>
+  );
+}
 
 const Profile = () => {
     return (
@@ -38,6 +79,7 @@ const Information = () => {
             <Stack direction='row' spacing={3} style={{display: 'block'}}>
                 <GitHubIcon />
                 <ArticleIcon />
+                <EmailPopOver />
             </Stack>
             <p style={{padding: '1rem 0', textAlign: 'justify'}}>
                 Currently, I'm a Ph.D candidate at Department of Bio and Brain
