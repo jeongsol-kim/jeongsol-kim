@@ -1,4 +1,4 @@
-import { IconButton, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
+import { IconButton, ImageList, ImageListItem, ImageListItemBar, Stack } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 
@@ -15,14 +15,16 @@ const PublicationBlock = ({item}) => {
         title={item.title}
         subtitle={<span>{item.where}</span>}
         actionIcon={
-            <>
-            <IconButton href={item.code} style={{padding: '0 4px'}}>
-                <GitHubIcon sx={{fontSize: { xs: 12, sm: 16, md: 25, lg: 30 }}}/>
-            </IconButton>
-            <IconButton href={item.paper} style={{padding: '0 4px'}}>
-                <ArticleOutlinedIcon sx={{fontSize: { xs: 12, sm: 16, md: 25, lg: 30 }}}/>
-            </IconButton>
-            </>
+            <Stack direction='row'>
+                <IconButton href={item.code} style={{padding: '0 4px'}}>
+                    <GitHubIcon 
+                        sx={{fontSize: { xs: 12, sm: 16, md: 25, lg: 30 }}}
+                    />
+                </IconButton>
+                <IconButton href={item.paper} style={{padding: '0 4px'}}>
+                    <ArticleOutlinedIcon sx={{fontSize: { xs: 12, sm: 16, md: 25, lg: 30 }}}/>
+                </IconButton>
+            </Stack>
         }
         position="bottom"
     />
@@ -34,7 +36,12 @@ const PublicationList = ({itemData}) => (
     <div className="center-content">
         <ImageList cols={1} gap={'2rem'}>
             {itemData.map((item) => (
+                <>
                 <PublicationBlock item={item}/>
+                <p style={{textAlign: 'justify'}}>
+                    Summary: {item.desc}
+                </p>
+                </>
             ))}
         </ImageList>
     </div>
