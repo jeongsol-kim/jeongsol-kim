@@ -32,7 +32,6 @@
           if (isClient) {
             const persistedColorPreference = window.localStorage.getItem('darkmode');
             if (persistedColorPreference){
-              console.log(persistedColorPreference)
               return JSON.parse(persistedColorPreference);
             }
     
