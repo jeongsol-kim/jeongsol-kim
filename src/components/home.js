@@ -7,6 +7,63 @@ import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 
+import Button from '@mui/material/Button';
+import Snackbar from '@mui/material/Snackbar';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+
+const CopySnackbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const copy = async () => {
+    await navigator.clipboard.writeText('jeongsol@kaist.ac.kr');
+  }
+
+  const handleClick = () => {
+    setOpen(true);
+    copy();
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpen(false);
+  };
+
+  const action = (
+    <>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </>
+  );
+
+  return (
+    <div>
+        <Typography 
+            sx={{ p: 2 }}
+            component='div'
+            onClick={handleClick}>
+            jeongsol@kaist.ac.kr
+        </Typography> 
+        {/* <Button onClick={handleClick}>jeongsol@kaist.ac.kr</Button> */}
+        <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="Email address is copied."
+        action={action}
+        />
+    </div>
+  );
+}
+
 const EmailPopOver = () => {
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -38,7 +95,7 @@ const EmailPopOver = () => {
                 horizontal: 'left',
               }}
         >
-            <Typography sx={{ p: 2 }}>jeongsol@kaist.ac.kr</Typography>
+            <CopySnackbar />
         </Popover>
     </div>
   );
