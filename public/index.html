@@ -24,7 +24,32 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Oranging-K</title>
+    <script type="text/javascript">
+      (function() {
+        function getInitialColorMode() {
+          const isClient = typeof window !== 'undefined';
+          if (isClient) {
+            const persistedColorPreference = window.localStorage.getItem('darkmode');
+            if (persistedColorPreference){
+              console.log(persistedColorPreference)
+              return JSON.parse(persistedColorPreference);
+            }
+    
+            const systemPreference = window.matchMedia('(prefers-color-scheme: dark)');
+            if (systemPreference.matches) {
+              return true;
+            }
+            return false;
+          }
+        }
+        const colorMode = getInitialColorMode();
+        document.documentElement.style.setProperty(
+          'background-color',
+          colorMode ? '#1E1E22' :'#F8F7F4'
+        );
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

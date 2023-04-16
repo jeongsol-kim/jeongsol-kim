@@ -3,6 +3,11 @@ import reset from 'styled-reset';
 
 export const GlobalStyle = createGlobalStyle`
     ${reset}
+
+    *{
+        transition: background 0.3s;
+    }
+
     body{
         background: ${({ theme })=> theme.bgColor};
         color: ${({ theme })=> theme.textColor};
@@ -22,6 +27,7 @@ export const GlobalStyle = createGlobalStyle`
         word-break: keep-all;
         work-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
+        transition: background 0.3s;
 
         @media screen and (max-width:768px) {
             font-size: 12px;
