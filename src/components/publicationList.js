@@ -3,7 +3,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 
 
-const PublicationBlock = (item) => (
+const PublicationBlock = ({item}) => {
+    return(
     <ImageListItem key={item.img}>
     <img
         src={item.img + '.png'}
@@ -26,15 +27,12 @@ const PublicationBlock = (item) => (
         position="bottom"
     />
     </ImageListItem>
-)
-
-// const StyledPublicationBlock = styled(PublicationBlock)`
-//     padding: 0px 0px;
-// `
+    )
+}
 
 const PublicationList = ({itemData}) => (
-    <div>
-        <ImageList cols={2}>
+    <div className="center-content">
+        <ImageList cols={1} gap={'2rem'}>
             {itemData.map((item) => (
                 <PublicationBlock item={item}/>
             ))}
