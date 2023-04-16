@@ -105,7 +105,8 @@ const Navigation = ({isDarkMode, toggleDarkMode}) => (
         edge="start"
         color="inherit"
         aria-label="menu"
-        sx={{ mr: 15 }}>
+        sx={{ mr: 15 }}
+        style={{marginLeft: '0'}}>
         <Typography variant="h6" component="div" style={{fontSize: '1.5rem'}}>
           Oranging-K
         </Typography>
