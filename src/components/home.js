@@ -1,7 +1,15 @@
+import profile from '../assets/profile.jpeg'
+
 const Home = () => {
     return (
-        <div>
-            <h1> Home page </h1>
+        <div style={{alignContent: 'center'}}>
+            <img 
+                src={profile}
+                alt='Profile'
+                width={'90%'}
+                style={{margin: 'auto',
+                        display: 'block'}}
+                />
         </div>
     )
 }
