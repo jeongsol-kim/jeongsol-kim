@@ -54,4 +54,26 @@ export const GlobalStyle = createGlobalStyle`
         margin-right: auto;
         width: 80%;
     }
+
+    .MuiImageListItemBar-title {
+        padding: 0;
+        @media screen and (max-width:768px) {
+            font-size: 0.8rem !important;
+        }
+    }
+
+    .MuiImageListItemBar-subtitle {
+        padding: 0;
+        @media screen and (max-width:768px) {
+            font-size: 0.2rem !important;
+        }
+    }
+
+    .MuiImageListItemBar-titleWrap {
+        padding: 1rem !important;
+        @media screen and (max-width:768px){
+            padding: 0.5rem !important;
+        }
+    }
+
 `

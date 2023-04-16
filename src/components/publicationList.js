@@ -16,11 +16,11 @@ const PublicationBlock = ({item}) => {
         subtitle={<span>{item.where}</span>}
         actionIcon={
             <>
-            <IconButton href={item.code}>
-                <GitHubIcon />
+            <IconButton href={item.code} style={{padding: '0 4px'}}>
+                <GitHubIcon sx={{fontSize: { xs: 12, sm: 16, md: 25, lg: 30 }}}/>
             </IconButton>
-            <IconButton href={item.paper}>
-                <ArticleOutlinedIcon />
+            <IconButton href={item.paper} style={{padding: '0 4px'}}>
+                <ArticleOutlinedIcon sx={{fontSize: { xs: 12, sm: 16, md: 25, lg: 30 }}}/>
             </IconButton>
             </>
         }
