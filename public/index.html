@@ -30,9 +30,9 @@
         function getInitialColorMode() {
           const isClient = typeof window !== 'undefined';
           if (isClient) {
-            const persistedColorPreference = window.localStorage.getItem('darkmode');
+            const persistedColorPreference = JSON.parse(window.localStorage.getItem('darkmode'));
             if (persistedColorPreference){
-              return JSON.parse(persistedColorPreference);
+              return persistedColorPreference;
             }
     
             const systemPreference = window.matchMedia('(prefers-color-scheme: dark)');
