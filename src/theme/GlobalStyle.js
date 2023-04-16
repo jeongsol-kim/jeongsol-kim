@@ -46,4 +46,12 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 1.3rem;
         }
     }
+
+    .center-content {
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
 `
