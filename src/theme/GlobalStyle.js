@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         color: ${({ theme })=> theme.textColor};
         position: relative;
         display: block;
-        width: 90%;
+        width: 100%;
         height: 100%;
         line-height: 1.5;
         margin: 0 auto;
@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
 
         @media screen and (max-width:768px) {
-            font-size: 12px
+            font-size: 12px;
         }
     }
 
