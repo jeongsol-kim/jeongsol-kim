@@ -9,7 +9,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import styled from "styled-components";
-import { Style, VerticalSplitOutlined } from "@mui/icons-material";
 
 
 const Mobile = ({children}) => {
@@ -106,7 +105,9 @@ const Navigation = ({isDarkMode, toggleDarkMode}) => (
         aria-label="menu"
         sx={{ mr: 15 }}
         style={{marginLeft: '0', marginRight: '0'}}>
-        <Typography variant="h6" component="div" style={{fontSize: '1.5rem'}}>
+        <Typography variant="h6" 
+                    component="div"
+                    style={{fontSize: '1rem'}}>
           Oranging-K
         </Typography>
       </IconButton>
