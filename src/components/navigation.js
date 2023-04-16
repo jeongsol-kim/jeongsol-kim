@@ -105,9 +105,10 @@ const Navigation = ({isDarkMode, toggleDarkMode}) => (
         aria-label="menu"
         sx={{ mr: 15 }}
         style={{marginLeft: '0', marginRight: '0'}}>
-        <Typography variant="h6" 
+        <Typography className="logo"
+                    variant="h6" 
                     component="div"
-                    style={{fontSize: '1rem'}}>
+                    >
           Oranging-K
         </Typography>
       </IconButton>

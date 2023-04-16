@@ -28,6 +28,14 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    .logo {
+        font-size: 1.5rem !important;
+
+        @media screen and (max-width:768px) {
+            font-size: 1.2rem !important;
+        }
+    }
+
     img.profile {
         margin: auto;
         display: block;
