@@ -1,8 +1,7 @@
-import styled from "styled-components";
-import { Card, IconButton, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
+import { IconButton, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
-import { publicationData } from "../data/publication";
+
 
 const PublicationBlock = (item) => (
     <ImageListItem key={item.img}>
@@ -19,11 +18,12 @@ const PublicationBlock = (item) => (
             <IconButton href={item.code}>
                 <GitHubIcon />
             </IconButton>
-            <IconButton href={item.code}>
+            <IconButton href={item.paper}>
                 <ArticleOutlinedIcon />
             </IconButton>
             </>
         }
+        position="bottom"
     />
     </ImageListItem>
 )
@@ -32,9 +32,13 @@ const PublicationBlock = (item) => (
 //     padding: 0px 0px;
 // `
 
-const PublicationCard = () => (
+const PublicationList = ({itemData}) => (
     <div>
-        <PublicationBlock />
+        <ImageList cols={2}>
+            {itemData.map((item) => (
+                <PublicationBlock item={item}/>
+            ))}
+        </ImageList>
     </div>
 );
-export default PublicationCard;
+export default PublicationList;
