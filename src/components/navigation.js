@@ -36,7 +36,7 @@ const StyledLink = styled(Link)`
   color: inherit;
   text-decoration: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 1rem;
 	text-align: center;
   font-weight: ${(props) => (props.isActive ? "bold" : "normal")};
 `;
@@ -106,11 +106,11 @@ const Navigation = ({isDarkMode, toggleDarkMode}) => (
         color="inherit"
         aria-label="menu"
         sx={{ mr: 15 }}>
-        <Typography variant="h6" component="div">
-          Jeongsol Kim
+        <Typography variant="h6" component="div" style={{fontSize: '1.5rem'}}>
+          Oranging-K
         </Typography>
       </IconButton>
-      <div className="links" style={{display: 'flex', justifyContent:'space-between'}}>
+      <div className="links" style={{display: 'block', justifyContent:'space-between'}}>
         <PC>
           <StyledLink to="/">HOME</StyledLink>
           <StyledLink to="/publication">PUBLICATION</StyledLink>
