@@ -61,7 +61,7 @@ const FadeMenu = ({isDarkMode, onClick}) => {
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}
         >
-          <MenuIcon style={{color:'white'}}/>
+          <MenuIcon style={{color: isDarkMode? 'white':'black'}}/>
         </Button>
         <Menu
           id="fade-menu"
@@ -82,12 +82,11 @@ const FadeMenu = ({isDarkMode, onClick}) => {
           <MenuItem>
           <StyledLink to="/sidework">SIDE-WORK</StyledLink>
           </MenuItem>
-          <MenuItem>
-          <Button>
-            onClick={onClick}
-            style={{color: 'inherit', fontSize: '1rem'}}
-            {isDarkMode ? "Light Mode": "Dark Mode"}
-          </Button>
+          <MenuItem onClick={onClick} style={{justifyContent: 'center'}}>
+          {
+            isDarkMode ? <DarkModeIcon />
+            : <LightModeIcon />
+          }
           </MenuItem>
         </Menu>
       </div>
@@ -106,7 +105,7 @@ const Navigation = ({isDarkMode, toggleDarkMode}) => (
         color="inherit"
         aria-label="menu"
         sx={{ mr: 15 }}
-        style={{marginLeft: '0'}}>
+        style={{marginLeft: '0', marginRight: '0'}}>
         <Typography variant="h6" component="div" style={{fontSize: '1.5rem'}}>
           Oranging-K
         </Typography>
