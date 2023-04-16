@@ -6,7 +6,7 @@ import Navigation from "./components/navigation";
 import Home from "./components/home";
 import Publication from "./components/publication";
 import Sidework from "./components/sidework";
-import { useState, useLayoutEffect} from "react";
+import { useState } from "react";
 
 function App() {
   // Be careful! localStorage.getItem return string, not boolean
@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <ThemeProvider theme={isDarkMode ? darkTheme: lightTheme}>
     <GlobalStyle />
       <Navigation isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
