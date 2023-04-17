@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
             "Noto Sans",
             "Noto Sans CJK KR",
             sans-serif;
+        font-weight: 350;
         word-break: keep-all;
         work-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
