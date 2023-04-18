@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
 export const GlobalStyle = createGlobalStyle`
-    ${reset}
 
     *{
         transition: background 0.3s;
