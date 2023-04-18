@@ -2,6 +2,7 @@ import { ImageList, ImageListItem, ImageListItemBar, Stack } from "@mui/material
 import { Link, Route, Routes } from "react-router-dom";
 import PostPage from "./post_page";
 import { PostList } from "../data/post_list";
+import styled from "styled-components";
 
 const WorkBlock = ({item}) => {
     return (
@@ -19,12 +20,17 @@ const WorkBlock = ({item}) => {
     )
 }
 
+const StyledLink = styled(Link)`
+    color: inherit;
+    text-decoration-line: none;
+`
+
 const WorkList = () => (
     <ImageList cols={2} gap={'2rem'}>
         {PostList.map((item) => (
-            <Link to={`${item.title}`}>
+            <StyledLink to={`${item.title}`}>
                 <WorkBlock item={item} />
-            </Link> 
+            </StyledLink> 
         ))
         }
     </ImageList>
