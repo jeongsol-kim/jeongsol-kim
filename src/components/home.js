@@ -10,6 +10,8 @@ import { useState } from 'react';
 import Snackbar from '@mui/material/Snackbar';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 const CopySnackbar = () => {
   const [open, setOpen] = useState(false);
@@ -51,7 +53,6 @@ const CopySnackbar = () => {
             onClick={handleClick}>
             jeongsol@kaist.ac.kr
         </Typography> 
-        {/* <Button onClick={handleClick}>jeongsol@kaist.ac.kr</Button> */}
         <Snackbar
         open={open}
         autoHideDuration={6000}
@@ -78,7 +79,7 @@ const EmailPopOver = () => {
   const id = open ? 'simple-popover' : undefined;
 
   return (
-    <div style={{display: 'inline-block'}}>
+    <div style={{display: 'flex', alignItems: 'center'}}>
         <EmailIcon onClick={handleClick}/> 
         <Popover
             id={id}
@@ -132,10 +133,22 @@ const Information = () => {
                     }}>
                 Hello! I'm Jeongsol Kim
             </h2>
-            <Stack direction='row' spacing={3} style={{display: 'block'}}>
+            <Stack direction='row' spacing={3} style={{display: 'block', alignItems: 'center'}}>
+              <IconButton 
+                style={{color:'inherit',
+                        padding: '0'}}>
                 <GitHubIcon />
+              </IconButton>
+              <IconButton 
+                style={{color:'inherit',
+                        padding: '0'}}>
                 <ArticleIcon />
+              </IconButton>
+              <IconButton 
+                style={{color:'inherit',
+                        padding: '0'}}>
                 <EmailPopOver />
+              </IconButton>
             </Stack>
             <p style={{padding: '1rem 0', textAlign: 'justify'}}>
                 Currently, I'm a Ph.D candidate at Department of Bio and Brain
