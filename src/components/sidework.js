@@ -1,12 +1,30 @@
-import styled from "styled-components";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import post from "../data/post";
+import PostPage from "./post_page";
+import { Link, Route, Routes } from "react-router-dom";
+import { PostList } from "../data/post_ilst";
+
+const WorkList = ({match}) => (
+    <>
+    <h2> Test </h2>
+    <ul>
+        {PostList.map((item) => (
+            <li key={item.title}>
+                <Link to={`${item.title}`}>
+                    {item.title}
+                </Link> 
+            </li>
+        ))}
+    </ul>
+    </>
+)
+
 
 const Sidework = () => {
     return (
         <div className="center-content">
-        <ReactMarkdown remarkPlugins={[remarkGfm]} children={post} />
+            <Routes>
+            <Route path='/' element={<WorkList />} />
+            <Route path={':title'} element={<PostPage />} />
+            </Routes>
         </div>
     );
 }
