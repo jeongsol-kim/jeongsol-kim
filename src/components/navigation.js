@@ -104,7 +104,8 @@ const Navigation = ({isDarkMode, toggleDarkMode}) => (
         color="inherit"
         aria-label="menu"
         sx={{ mr: 15 }}
-        style={{marginLeft: '0', marginRight: '0'}}>
+        style={{marginLeft: '0', marginRight: '0'}}
+        href="/">
         <Typography className="logo"
                     variant="h6" 
                     component="div"
