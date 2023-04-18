@@ -32,7 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/publication" element={<Publication />}/>
-        <Route path="/sidework" element={<Sidework />}/>
+        <Route path="/sidework/*" element={<Sidework />}/>
       </Routes>
     </ThemeProvider>
     </BrowserRouter>
