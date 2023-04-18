@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/jeongsol-kim/static/css/main.792572e7.css",
-    "main.js": "/jeongsol-kim/static/js/main.23ad1a07.js",
-    "static/js/787.0dd1f518.chunk.js": "/jeongsol-kim/static/js/787.0dd1f518.chunk.js",
-    "static/media/AppleSDGothicNeo.ttf": "/jeongsol-kim/static/media/AppleSDGothicNeo.0ed4f3cf8e0a053dbc9c.ttf",
-    "index.html": "/jeongsol-kim/index.html",
-    "main.792572e7.css.map": "/jeongsol-kim/static/css/main.792572e7.css.map",
-    "main.23ad1a07.js.map": "/jeongsol-kim/static/js/main.23ad1a07.js.map",
-    "787.0dd1f518.chunk.js.map": "/jeongsol-kim/static/js/787.0dd1f518.chunk.js.map"
+    "main.css": "/static/css/main.1d58396f.css",
+    "main.js": "/static/js/main.f90e775b.js",
+    "static/js/787.0dd1f518.chunk.js": "/static/js/787.0dd1f518.chunk.js",
+    "static/media/AppleSDGothicNeo.ttf": "/static/media/AppleSDGothicNeo.0ed4f3cf8e0a053dbc9c.ttf",
+    "index.html": "/index.html",
+    "main.1d58396f.css.map": "/static/css/main.1d58396f.css.map",
+    "main.f90e775b.js.map": "/static/js/main.f90e775b.js.map",
+    "787.0dd1f518.chunk.js.map": "/static/js/787.0dd1f518.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.792572e7.css",
-    "static/js/main.23ad1a07.js"
+    "static/css/main.1d58396f.css",
+    "static/js/main.f90e775b.js"
   ]
 }
