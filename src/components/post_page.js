@@ -1,6 +1,6 @@
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import remarkGfm from "remark-gfm";
-import { PostList } from "../data/post_ilst";
+import { PostList } from "../data/post_list";
 import { useParams } from "react-router-dom";
 
 

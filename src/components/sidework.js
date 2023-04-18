@@ -1,6 +1,6 @@
 import PostPage from "./post_page";
 import { Link, Route, Routes } from "react-router-dom";
-import { PostList } from "../data/post_ilst";
+import { PostList } from "../data/post_list";
 
 const WorkList = ({match}) => (
     <>
