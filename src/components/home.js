@@ -136,12 +136,14 @@ const Information = () => {
             <Stack direction='row' spacing={3} style={{display: 'block', alignItems: 'center'}}>
               <IconButton 
                 style={{color:'inherit',
-                        padding: '0'}}>
+                        padding: '0'}}
+                href="https://github.com/jeongsol-kim/jeongsol-kim">
                 <GitHubIcon />
               </IconButton>
               <IconButton 
                 style={{color:'inherit',
-                        padding: '0'}}>
+                        padding: '0'}}
+                href="https://scholar.google.com/citations?user=ZaVNwcQAAAAJ&hl=ko">
                 <ArticleIcon />
               </IconButton>
               <IconButton 
