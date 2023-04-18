@@ -26,29 +26,29 @@ const StyledLink = styled(Link)`
 `
 
 const WorkList = () => (
-    <ImageList cols={2} gap={'2rem'}>
-        {PostList.map((item) => (
-            <StyledLink to={`${item.title}`}>
-                <WorkBlock item={item} />
-            </StyledLink> 
-        ))
-        }
-    </ImageList>
+    <div className="center-content">
+        <h2 className="hello"
+            style={{textAlign:'center', padding: '1rem 0'}}>
+            Side Projects
+        </h2>
+        <ImageList cols={2} gap={'2rem'}>
+            {PostList.map((item) => (
+                <StyledLink to={`${item.title}`}>
+                    <WorkBlock item={item} />
+                </StyledLink> 
+            ))
+            }
+        </ImageList>
+    </div>
 )
 
 
 const Sidework = () => {
     return (
-        <div className="center-content">
-            <h2 className="hello"
-                style={{textAlign:'center', padding: '1rem 0'}}>
-                Side Projects
-            </h2>
-            <Routes>
-            <Route path='/' element={<WorkList />} />
-            <Route path={':title'} element={<PostPage />} />
-            </Routes>
-        </div>
+        <Routes>
+        <Route path='/' element={<WorkList />} />
+        <Route path={':title'} element={<PostPage />} />
+        </Routes>
     );
 }
 
