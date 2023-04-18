@@ -71,6 +71,7 @@ export const GlobalStyle = createGlobalStyle`
 
     .MuiImageListItemBar-title {
         padding: 0;
+        font-size: 1.2rem !important;
         @media screen and (max-width:768px) {
             font-size: 0.8rem !important;
         }
