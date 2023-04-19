@@ -1,23 +1,9 @@
 export const PostList = [
 {
 	id: 0,
-	path: './projects/test_v1', 
+	path: './projects/230420_jaxflax', 
 	title: 'Simple JAX-FLAX implementation', 
-	thumbnail: process.env.PUBLIC_URL + '/logo512.png', 
-	content: require('./projects/test_v1').post
-},
-{
-	id: 1,
-	path: './projects/test_v2', 
-	title: 'Header', 
-	thumbnail: process.env.PUBLIC_URL + '/logo512.png', 
-	content: require('./projects/test_v2').post
-},
-{
-	id: 2,
-	path: './projects/test_v3', 
-	title: 'Header', 
-	thumbnail: process.env.PUBLIC_URL + '/logo512.png', 
-	content: require('./projects/test_v3').post
+	thumbnail: 'https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg', 
+	content: require('./projects/230420_jaxflax').post
 },
 ];
