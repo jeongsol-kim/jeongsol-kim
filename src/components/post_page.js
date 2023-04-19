@@ -10,12 +10,13 @@ const PostPage = () => {
     const { title } = useParams();
     const post = PostList.find((item) => item.title === title);
     return (
-        <div className="center-content">
-            <img 
-                src={post.thumbnail} 
-                alt={post.title}
-                style={{maxWidth:'15rem', display:'block'}}/>
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        <div className="center-content" style={{textAlign: 'justify'}}>
+            <ReactMarkdown 
+                components={{img: ({node, ...props}) => <img style={{maxWidth: '100%', 
+                                                                     display: 'block',
+                                                                     marginLeft: 'auto',
+                                                                     marginRight: 'auto'}}{...props} alt=""/>}}
+                remarkPlugins={[remarkGfm]}>
                 {post.content}
             </ReactMarkdown>
             <Button 
