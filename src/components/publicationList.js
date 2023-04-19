@@ -16,12 +16,12 @@ const PublicationBlock = ({item}) => {
         subtitle={<span>{item.where}</span>}
         actionIcon={
             <Stack direction='row'>
-                <IconButton href={item.code} style={{padding: '0 4px', color:'inherit'}}>
+                <IconButton href={item.code} style={{padding: '0 4px', color:'white'}}>
                     <GitHubIcon 
                         sx={{fontSize: { xs: 12, sm: 16, md: 25, lg: 30 }}}
                     />
                 </IconButton>
-                <IconButton href={item.paper} style={{padding: '0 4px', color: 'inherit'}}>
+                <IconButton href={item.paper} style={{padding: '0 4px', color: 'white'}}>
                     <ArticleOutlinedIcon sx={{fontSize: { xs: 12, sm: 16, md: 25, lg: 30 }}}/>
                 </IconButton>
             </Stack>
