@@ -17,7 +17,10 @@ do
     # strip # and a whitespace
     title="${title:2}"
 
-    # get thumbnail src
+    # get thumbnail src (assume that thumbnail image is defined at third line.)
+    thumbnail=$(sed -n '3p' ${post})
+    thumbnail="${thumbnail#*(}"
+    thumbnail="${thumbnail%)}"
 
     # get basename
     basename="${post##*/}"  # cut longest matching with */ from beginning
@@ -25,7 +28,7 @@ do
 
     prompt="{\n\tid: $i,\n\tpath: './projects/$basename',\
             \n\ttitle: '$title',\
-            \n\tthumbnail: process.env.PUBLIC_URL + '/logo512.png',\
+            \n\tthumbnail: '$thumbnail',\
             \n\tcontent: require('./projects/$basename').post\n},"
     echo -e ${prompt} >> ${file}
     i=$(( i + 1 ))
