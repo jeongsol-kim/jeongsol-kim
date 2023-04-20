@@ -5,6 +5,11 @@ import { PostList } from "../data/post_list";
 import styled from "styled-components";
 import { useTitle } from "./title_hook";
 
+const StyledImageListItemBar = styled(ImageListItemBar)`
+    font-weight: bold;
+    text-align: center;
+`
+
 const WorkBlock = ({item}) => {
     return (
         <ImageListItem key={item.id}>
@@ -13,7 +18,7 @@ const WorkBlock = ({item}) => {
             alt={item.title}
             loading='lzay' 
         />
-        <ImageListItemBar 
+        <StyledImageListItemBar 
             title={item.title}
             position="below"
         />
