@@ -39,7 +39,7 @@ const WorkList = () => {
             style={{textAlign:'center', padding: '1rem 0'}}>
             Side Projects
         </h2>
-        <ImageList cols={2} gap={'2rem'}>
+        <ImageList cols={2} gap={2}>
             {PostList.map((item) => (
                 <StyledLink to={`${item.title}`}>
                     <WorkBlock item={item} />
