@@ -11,7 +11,7 @@ const PostPage = ({isDarkMode}) => {
     useTitle(title + ' | Jeongsol Kim');
     const post = PostList.find((item) => item.title === title);
     return (
-        <div className="center-content" style={{textAlign: 'justify'}}>
+        <div className="center-content">
             <Markdown markdown={post.content} isDarkmode={isDarkMode}/>
             <Button 
                 color='info'
