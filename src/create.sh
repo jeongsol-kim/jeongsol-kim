@@ -20,7 +20,7 @@ do
     # get thumbnail src (assume that thumbnail image is defined at third line.)
     thumbnail=$(sed -n '3p' ${post})
     thumbnail="${thumbnail#*(}"
-    thumbnail="${thumbnail%)}"
+    thumbnail="${thumbnail%)*}"
 
     # get basename
     basename="${post##*/}"  # cut longest matching with */ from beginning
