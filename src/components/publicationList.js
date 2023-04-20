@@ -1,9 +1,11 @@
 import { IconButton, ImageList, ImageListItem, ImageListItemBar, Stack } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
-
+import { useTitle } from "./title_hook";
 
 const PublicationBlock = ({item}) => {
+    useTitle('Publication | Oranging-K');
+
     return(
     <ImageListItem key={item.img}>
     <img

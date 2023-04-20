@@ -1,8 +1,9 @@
-import { ImageList, ImageListItem, ImageListItemBar, Stack } from "@mui/material";
+import { ImageList, ImageListItem, ImageListItemBar  } from "@mui/material";
 import { Link, Route, Routes } from "react-router-dom";
 import PostPage from "./post_page";
 import { PostList } from "../data/post_list";
 import styled from "styled-components";
+import { useTitle } from "./title_hook";
 
 const WorkBlock = ({item}) => {
     return (
@@ -25,7 +26,9 @@ const StyledLink = styled(Link)`
     text-decoration-line: none;
 `
 
-const WorkList = () => (
+const WorkList = () => {
+    useTitle('SideWork | Oranging-K')
+    return (
     <div className="center-content">
         <h2 className="hello"
             style={{textAlign:'center', padding: '1rem 0'}}>
@@ -40,7 +43,7 @@ const WorkList = () => (
             }
         </ImageList>
     </div>
-)
+)}
 
 
 const Sidework = () => {
