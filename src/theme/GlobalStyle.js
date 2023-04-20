@@ -68,7 +68,11 @@ export const GlobalStyle = createGlobalStyle`
         left: 0;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 60%;
+
+        @media screen and (max-width:768px) {
+            width: 80%;
+        }
     }
 
     .MuiImageListItemBar-title {
