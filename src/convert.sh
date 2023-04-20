@@ -9,6 +9,5 @@ do
     content="${content//\`\`\`/\\\`\\\`\\\`}"
     # set outpath
     jsfile="${jsfile/write/projects}"
-    echo $content
     echo -e "const post=\` \n${content}\n\`\n\nconst _post = post;\nexport { _post as post };" > ${jsfile}
 done
