@@ -1,45 +1,41 @@
-import './App.css';
-
-import Navigation from './components/navigation/Navigation';
-import Introduction from './components/introduction/Introduction';
-import About from './components/about/About';
-import News from './components/news/News';
-import Publication from './components/publication/Publication';
-import Education from './components/education/Education';
-// import Conference from './components/conference/Conference';
-import Awards from './components/award/Award';
-import Footer from './components/footer/Footer';
-import { useRef } from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "./theme/GlobalStyle";
+import { lightTheme, darkTheme } from "./theme/theme";
+import Navigation from "./components/navigation";
+import Home from "./components/home";
+import Publication from "./components/publication";
+import Sidework from "./components/sidework";
+import { useState } from "react";
 
 function App() {
-  const introSection = useRef(null)
-  const aboutSection = useRef(null)
-  const eduSection = useRef(null)
-  const newSection = useRef(null)
-  const pubSection = useRef(null)
-  const awardSection = useRef(null)
+  // Be careful! localStorage.getItem return string, not boolean
+  const isLocalDark = JSON.parse(window.localStorage.getItem('darkmode'))
+  const [isDarkMode, setIsDarkMode] = useState(isLocalDark);
 
-  const refs = {
-    'intro': introSection,
-    'about': aboutSection,
-    'edu': eduSection,
-    'news': newSection,
-    'pub' : pubSection,
-    'award': awardSection
-  };
+  const toggleDarkMode = () => {
+    // Perhaps, this should be faster than setIsDarkMode. Later, check async
+    window.localStorage.setItem('darkmode', !isDarkMode)
+    setIsDarkMode((prev) => !prev)
+    document.documentElement.style.setProperty(
+      'background-color',
+      !isDarkMode ? '#1E1E22' :'#F8F7F4'
+    );
+
+  }
 
   return (
-    <div>
-      <Navigation ref={refs}/>
-      <Introduction ref={introSection}/>
-      <About ref={aboutSection}/>
-      <Education ref={eduSection}/>
-      <News ref={newSection}/>
-      <Publication ref={pubSection}/>
-      {/* <Conference /> */}
-      <Awards ref={awardSection}/>
-      <Footer />
-    </div>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <ThemeProvider theme={isDarkMode ? darkTheme: lightTheme}>
+    <GlobalStyle />
+      <Navigation isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/publication" element={<Publication />}/>
+        <Route path="/sidework/*" element={<Sidework isDarkMode={isDarkMode}/>}/>
+      </Routes>
+    </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
