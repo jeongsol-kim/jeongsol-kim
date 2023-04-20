@@ -4,7 +4,7 @@ import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import { useTitle } from "./title_hook";
 
 const PublicationBlock = ({item}) => {
-    useTitle('Publication | Oranging-K');
+    useTitle('Publication | Jeongsol Kim');
 
     return(
     <ImageListItem key={item.img}>

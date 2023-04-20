@@ -32,7 +32,7 @@ const StyledLink = styled(Link)`
 `
 
 const WorkList = () => {
-    useTitle('SideWork | Oranging-K')
+    useTitle('SideWork | Jeongsol Kim')
     return (
     <div className="center-content">
         <h2 className="hello"

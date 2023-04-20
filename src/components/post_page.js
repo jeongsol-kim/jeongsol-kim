@@ -9,7 +9,7 @@ import { useTitle } from "./title_hook";
 const PostPage = () => {
     const navigate = useNavigate();
     const { title } = useParams();
-    useTitle(title + ' | Oranging-K');
+    useTitle(title + ' | Jeongsol Kim');
     const post = PostList.find((item) => item.title === title);
     return (
         <div className="center-content" style={{textAlign: 'justify'}}>

@@ -167,7 +167,7 @@ const Information = () => {
 }
 
 const Home = () => {
-    useTitle('Oranging-K')
+    useTitle('Jeongsol Kim')
     return (
         <div style={{justifyContent: 'center'}}> 
             <Profile />
