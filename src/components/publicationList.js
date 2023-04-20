@@ -2,12 +2,29 @@ import { IconButton, ImageList, ImageListItem, ImageListItemBar, Stack } from "@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import { useTitle } from "./title_hook";
+import { useMediaQuery } from "react-responsive"
+
+export const Mobile = ({children}) => {
+    const isMobile = useMediaQuery({
+        query: "(max-width:768px)"
+    });
+
+    return <>{isMobile && children}</>
+}
+
+export const PC = ({children}) => {
+    const isPc = useMediaQuery({
+        query: "(min-width:769px)"
+    });
+
+    return <>{isPc && children}</>
+}
 
 const PublicationBlock = ({item}) => {
     useTitle('Publication | Jeongsol Kim');
 
     return(
-    <ImageListItem key={item.img}>
+    <ImageListItem key={item.title}>
     <img
         src={item.img + '.png'}
         alt={item.title}
@@ -30,22 +47,33 @@ const PublicationBlock = ({item}) => {
         }
         position="bottom"
     />
+    {/* <p style={{textAlign:'justify'}}>
+        Summary: {item.desc}
+    </p> */}
     </ImageListItem>
     )
 }
 
 const PublicationList = ({itemData}) => (
     <div className="center-content">
-        <ImageList cols={1} gap={'2rem'}>
+        <PC>
+        <ImageList cols={2} gap={16}>
             {itemData.map((item) => (
                 <>
                 <PublicationBlock item={item}/>
-                <p style={{textAlign: 'justify'}}>
-                    Summary: {item.desc}
-                </p>
                 </>
             ))}
         </ImageList>
+        </PC>
+        <Mobile>
+        <ImageList cols={1} gap={16}>
+            {itemData.map((item) => (
+                <>
+                <PublicationBlock item={item}/>
+                </>
+            ))}
+        </ImageList>
+        </Mobile>
     </div>
 );
 export default PublicationList;

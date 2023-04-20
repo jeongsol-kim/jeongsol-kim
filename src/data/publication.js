@@ -5,12 +5,9 @@ export const publicationData = [
         where: 'Hyungjin Chung*, Jeongsol Kim*, Sehui Kim, Jong Chul Ye (*co-first) / CVPR 2023',
         code: 'https://github.com/BlindDPS/blind-dps',
         paper: 'https://arxiv.org/abs/2211.10656',
-        desc: 'The inverse problem that contains unknown parameters of forward operation is called ' +
-        'blind inverse problem. In this paper, we propose diffusion-based method to solve the blind inverse problem '+
-        'which estimates both true signal and parameters of forward operation. The proposed method is based on '+
-        'approximated posterior sampling where the pre-trained diffusion model is used as prior, so that '+
-        'no further fine-tuning is required.',
-
+        desc: 'By leveraging pretrained diffusion model as prior, solve blind inverse problem ' +
+        'where parameters of forward operation are needed to be estimated as well as the true signal. ' +
+        'Approximated posterior sampling is adopted.'
     },
     {
         img: process.env.PUBLIC_URL + '/imgs/dps',
@@ -18,12 +15,9 @@ export const publicationData = [
         where: 'Hyungjin Chung*, Jeongsol Kim*, Michael T.McCann, Marc L. Klasky, Jong Chul Ye (*co-first) / ICLR 2023, spotlight',
         code: 'https://github.com/DPS2022/diffusion-posterior-sampling',
         paper: 'https://openreview.net/forum?id=OnD9zGAGT0k',
-        desc: 'Diffusion-based models have been explored as a promising way to solve various inverse problems.' +
-        'However, existing methods have focused on noiseless and linear inverse problems, which are limited domains ' +
-        'compared to real-world problems. In this paper, we propose an approximated posterior sampling method ' +
-        'for diffusion-based model to solve noisy and non-linear problems (we call them as general noisy inverse problems).' +
-        'We provide the theoretical result showing that the approximation gap is upper-bounded and provide experimental results ' +
-        'showing the superior performance of the proposed method over existing methods.',
+        desc: 'Solve inverse problem using pretrained diffusion model. Unlike existing methods that have focused on noiseless ' +
+        'and linear inverse problem, this paper could solve noisy and non-linear problems. ' + 
+        'Theoratical analysis on upper bound of the approximation gap is provided.'
     },
     {
         img: process.env.PUBLIC_URL + '/imgs/tavit',
@@ -31,14 +25,10 @@ export const publicationData = [
         where: 'Boah Kim*, Jeongsol Kim*, Jong Chul Ye (*co-first) / IEEE Transaction on Image Processing, Vol 32',
         code: 'https://github.com/TAViT2022/TAViT',
         paper: 'https://ieeexplore.ieee.org/document/9979765',
-        desc: 'With the increasing importance of data privacy, distributed learning, where the training datasets ' +
-        'are not aggregated by the central server, has been in the spotlight.' +
-        'However, existing distributed learning methods has focused on a single task, ' +
-        'while the demand for multi-task system in distributed learning has been increased. ' +
-        'In this paper, we propose a novel task-agnostic distributed learning framework by introducing ' +
-        'task-specific CNN encoder and decoder on each client connected with task-agnostic Transformer on the server. ' +
-        'With capacity of Transformer with less inductive bias and alternative optimization method, the proposed method shows ' +
-        'comparable or better performance on four image processing tasks, without fine-tuning for each task.'
+        desc: 'We propose a novel task-agnostic distributed learning framework by introducing ' +
+        'task-specific CNN encoder-decoder on each client and task-agnostic Transformer on the server. ' +
+        'With less inductive bias of Transformer, the proposed method shows comparable or better performance '+
+        'on four image processing tasks, without fine-tuning for each task.'
     },
     {
         img: process.env.PUBLIC_URL + '/imgs/festa',
