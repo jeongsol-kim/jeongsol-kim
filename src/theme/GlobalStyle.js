@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset';
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -28,6 +27,9 @@ export const GlobalStyle = createGlobalStyle`
         work-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         transition: background 0.3s;
+        text-align: justify;
+        word-break: break-all;
+        // work-wrap: break-word;
 
         @media screen and (max-width:768px) {
             font-size: 12px;
