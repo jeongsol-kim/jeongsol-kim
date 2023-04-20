@@ -30,9 +30,9 @@ function App() {
     <GlobalStyle />
       <Navigation isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
       <Routes>
-        <Route path="./" element={<Home />}/>
-        <Route path="./publication" element={<Publication />}/>
-        <Route path="./sidework/*" element={<Sidework isDarkMode={isDarkMode}/>}/>
+        <Route path="/" element={<Home />}/>
+        <Route path="/publication" element={<Publication />}/>
+        <Route path="/sidework/*" element={<Sidework isDarkMode={isDarkMode}/>}/>
       </Routes>
     </ThemeProvider>
     </BrowserRouter>
