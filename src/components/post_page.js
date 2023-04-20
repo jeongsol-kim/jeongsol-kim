@@ -5,14 +5,14 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { useTitle } from "./title_hook";
 import Markdown from "./markdown";
 
-const PostPage = () => {
+const PostPage = ({isDarkMode}) => {
     const navigate = useNavigate();
     const { title } = useParams();
     useTitle(title + ' | Jeongsol Kim');
     const post = PostList.find((item) => item.title === title);
     return (
         <div className="center-content" style={{textAlign: 'justify'}}>
-            <Markdown markdown={post.content} />
+            <Markdown markdown={post.content} isDarkmode={isDarkMode}/>
             <Button 
                 color='info'
                 startIcon={<ChevronLeftIcon />}

@@ -1,15 +1,15 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from "remark-gfm";
-import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { oneDark, materialDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { oneDark, oneLight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-const Markdown = ({ markdown }) => {
-    const syntaxTheme = materialDark;
+const Markdown = ({ markdown, isDarkmode }) => {
+    const syntaxTheme = isDarkmode? oneDark:oneLight;
 
     const MarkdownComponents = {
         code({ node, inline, className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || "");
-  
+
             return !inline && match ? (
               <SyntaxHighlighter
                 style={syntaxTheme}

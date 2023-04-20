@@ -51,11 +51,11 @@ const WorkList = () => {
 )}
 
 
-const Sidework = () => {
+const Sidework = ({isDarkMode}) => {
     return (
         <Routes>
         <Route path='/' element={<WorkList />} />
-        <Route path={':title'} element={<PostPage />} />
+        <Route path={':title'} element={<PostPage isDarkMode={isDarkMode}/>} />
         </Routes>
     );
 }
