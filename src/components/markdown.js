@@ -32,6 +32,14 @@ const Markdown = ({ markdown, isDarkmode }) => {
                     marginRight: 'auto'}}{...props} alt=""/>
         )
     },
+    a({node, children, ...props}) {
+      return (
+        <a style={{textDecoration: 'underline',
+                   color: 'inherit'}}{...props}>
+          {children}
+        </a> 
+      )
+    },
     }
 
     return (
