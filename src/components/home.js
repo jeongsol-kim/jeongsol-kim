@@ -10,8 +10,7 @@ import { useState } from 'react';
 import Snackbar from '@mui/material/Snackbar';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import { useTitle } from './title_hook';
 
 const CopySnackbar = () => {
   const [open, setOpen] = useState(false);
@@ -168,6 +167,7 @@ const Information = () => {
 }
 
 const Home = () => {
+    useTitle('Oranging-K')
     return (
         <div style={{justifyContent: 'center'}}> 
             <Profile />
