@@ -15,13 +15,9 @@ import { useTitle } from './title_hook';
 const CopySnackbar = () => {
   const [open, setOpen] = useState(false);
 
-  const copy = async () => {
-    await navigator.clipboard.writeText('jeongsol@kaist.ac.kr');
-  }
-
-  const handleClick = () => {
-    setOpen(true);
-    copy();
+  const handleClick = async () => {
+    await navigator.clipboard.writeText('jeongsol@kaist.ac.kr')
+    .then(() => {setOpen(true)})
   };
 
   const handleClose = (event, reason) => {
