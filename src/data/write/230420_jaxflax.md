@@ -1,6 +1,6 @@
 # Simple JAX-FLAX implementation
 
-![jax_logo](https://modulabs.co.kr/wp-content/uploads/2023/02/jax_logo-1536x480.jpg)
+![main_figure](https://images.unsplash.com/photo-1559600279-23b5cc415412?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80)
 
 ## Project link
 https://github.com/jeongsol-kim/jax_practice
@@ -8,6 +8,7 @@ https://github.com/jeongsol-kim/jax_practice
 > warning. This project is built in 2022 with older version of JAX and FLAX. There would be simpler way to implement the same thing. I will update codes in the future.
 
 ## What is JAX?
+![jax_logo](https://modulabs.co.kr/wp-content/uploads/2023/02/jax_logo-1536x480.jpg)
 
 _**JAX**_ is a library developed by Google for scientific calculation. It supports various features including parallel computating, GPU acceleration, and auto-grad. 
 
