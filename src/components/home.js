@@ -132,7 +132,7 @@ const Information = () => {
               <IconButton 
                 style={{color:'inherit',
                         padding: '0'}}
-                href="https://github.com/jeongsol-kim/jeongsol-kim">
+                href="https://github.com/jeongsol-kim">
                 <GitHubIcon />
               </IconButton>
               <IconButton 
