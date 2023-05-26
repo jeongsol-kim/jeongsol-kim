@@ -3,9 +3,9 @@ const post=`
 
 ![finder-main](https://images.unsplash.com/photo-1516382799247-87df95d790b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80)
 
-source: <a href="https://unsplash.com/@olloweb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Agence Olloweb</a> of Unsplash
+source: Agence Olloweb of Unsplash
   
-<br/>
+
 
 ## Project link
 https://github.com/jeongsol-kim/difference_finder
@@ -27,7 +27,7 @@ Hence, I decided to make a python library that could spot the different points b
 
 ## Quick start
 
-\`\`\`
+\`\`\`python
 from pathlib import Path
 from difference_finder.finder import Finder
 
@@ -77,7 +77,7 @@ Basically, _**Difference-Finder**_ consists of pre- and post- processors, strate
 Currently, the following modules are implemented. Note that written codes are pseudocodes to show the concept, not the implementations.
 
 **Identity** (name: _identity_)
-\`\`\`
+\`\`\`python
 def idendity(x: torch.Tensor) -> torch.Tensor:
     return x
 \`\`\`
@@ -85,14 +85,14 @@ def idendity(x: torch.Tensor) -> torch.Tensor:
 - Default option
 
 **Normalization** (name: _normalize_)
-\`\`\`
+\`\`\`python
 def normalization(x: torch.Tensor) -> torch.Tensor:
     return (x-x.min())/(x.max()-x.min())
 \`\`\`
 - Pixel value normalization to [0..1].
 
 **High-pass filter** (name: _highpass_filter_)
-\`\`\`
+\`\`\`python
 def highpass_filter(x: torch.Tensor, factor: float) -> torch.Tensor:
     kspace = fft2d(x)
     kspace = get_high_freq(kspace, factor)
@@ -103,7 +103,7 @@ def highpass_filter(x: torch.Tensor, factor: float) -> torch.Tensor:
 - The default value of _factor_ is 0.1, which means that central 30 pixels are filled with zeros for the image size of 300 pixels. Thi value of _factor_ is fixed for now.
 
 **Low-pass filter** (name: _lowpass_filter_)
-\`\`\`
+\`\`\`python
 def lowpass_filter(x: torch.Tensor, factor: float) -> torch.Tensor:
     kspace = fft2d(x)
     kspace = get_low_freq(kspace, factor)
@@ -118,7 +118,7 @@ def lowpass_filter(x: torch.Tensor, factor: float) -> torch.Tensor:
 Currently, there is no variants for the post processor, but it is planned to implement some processors. Plsease check the project repository.
 
 **Idendity** (name: _identity_)
-\`\`\`
+\`\`\`python
 def identity(x: torch.Tensor) -> torch.Tensor:
     return x
 \`\`\`
