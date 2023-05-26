@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # convert
-bash src/convert.sh
+sh src/convert.sh
 
 # create data
-bash src/create.sh
+sh src/create.sh
 
 # git push
 git add .
