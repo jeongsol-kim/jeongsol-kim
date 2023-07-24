@@ -1,4 +1,4 @@
--e const post=` 
+const post=` 
 # Factory method and Class Instantiation
 
 ![factory-main](https://refactoring.guru/images/patterns/content/factory-method/factory-method-en-2x.png?id=b3961995a4449fb90820a693013511df)
