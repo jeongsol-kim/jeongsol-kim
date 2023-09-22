@@ -1,5 +1,27 @@
 export const publicationData = [
     {
+        img: process.env.PUBLIC_URL + '/imgs/bcu',
+        title: 'Energy-based Cross-Attention for Bayesian Context Update in Text-to-Image Diffusion Models',
+        where: 'Geonyoung Park*, Jeongsol Kim*, Beomsu Kim, Sangwan Lee, Jong Chul Ye (*co-first) / NeurIPS 2024',
+        code: '',
+        paper: 'https://openreview.net/pdf?id=lOCHMGO6ow',
+        dsec: 'Based on Hopsfield Network that has interpreted the attention operation in energy perspective, ' + 
+        'we propose context update for the cross-attention operation using newly introduced energy function. ' + 
+        'As a result, our method has achieved better alignment between image query and context key on the cross-attention space.' +
+        'Furthermore, we extend our understanding of attention as energy minimiztion toward compositional generation, ' +
+        'so that text-guided compositional generation could be effectively conducted.'
+    },
+    {
+        img: process.env.PUBLIC_URL + '/imgs/cddb',
+        title: 'Direct Diffusion Bridge using Data Consistency for Inverse Problems',
+        where: 'Hyungjin Chung*, Jeongsol Kim*, Jong Chul Ye (*co-first) / NeurIPS 2024',
+        code: '',
+        paper: 'https://openreview.net/pdf?id=497CevPdOg',
+        dsec: 'We propose a modified inference procedure for Direct Diffusion Bridge (DDB) ' + 
+        'that imposes data consistency without the need for fine-tuning. ' +
+        'As a result, we effectively push the Pareto-frontier (fidelity-consistency) toward the optimum.'
+    },
+    {
         img: process.env.PUBLIC_URL + '/imgs/blinddps',
         title: 'Parallel Diffusion Models of Operator and Image for Bilnd Inverse Problems',
         where: 'Hyungjin Chung*, Jeongsol Kim*, Sehui Kim, Jong Chul Ye (*co-first) / CVPR 2023',
