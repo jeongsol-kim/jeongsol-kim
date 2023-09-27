@@ -1,8 +1,8 @@
-import { IconButton, ImageList, ImageListItem, ImageListItemBar, Stack } from "@mui/material";
-import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { IconButton, ImageList, ImageListItem, ImageListItemBar, Stack } from "@mui/material";
+import { useMediaQuery } from "react-responsive";
 import { useTitle } from "./title_hook";
-import { useMediaQuery } from "react-responsive"
 
 export const Mobile = ({children}) => {
     const isMobile = useMediaQuery({
@@ -56,16 +56,6 @@ const PublicationBlock = ({item}) => {
 
 const PublicationList = ({itemData}) => (
     <div className="center-content">
-        <PC>
-        <ImageList cols={2} gap={16}>
-            {itemData.map((item) => (
-                <>
-                <PublicationBlock item={item}/>
-                </>
-            ))}
-        </ImageList>
-        </PC>
-        <Mobile>
         <ImageList cols={1} gap={16}>
             {itemData.map((item) => (
                 <>
@@ -73,7 +63,6 @@ const PublicationList = ({itemData}) => (
                 </>
             ))}
         </ImageList>
-        </Mobile>
     </div>
 );
 export default PublicationList;

@@ -62,6 +62,13 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 1.3rem;
         }
     }
+    
+    .introtext {
+        font-size: 1.2rem;
+        @media screen and (max-width: 768px) {
+            font-size: 0.7rem;
+        }
+    }
 
     .center-content {
         right: 0;
