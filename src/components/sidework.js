@@ -1,4 +1,4 @@
-import { ImageList, ImageListItemBar } from "@mui/material";
+import { ImageList } from "@mui/material";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -9,11 +9,6 @@ import styled from "styled-components";
 import { PostList } from "../data/post_list";
 import PostPage from "./post_page";
 import { useTitle } from "./title_hook";
-
-const StyledImageListItemBar = styled(ImageListItemBar)`
-    font-weight: bold;
-    text-align: center;
-`
 
 const Mobile = ({children}) => {
     const isMobile = useMediaQuery({
