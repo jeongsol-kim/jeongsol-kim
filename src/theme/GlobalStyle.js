@@ -70,6 +70,7 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    
     .center-content {
         right: 0;
         left: 0;

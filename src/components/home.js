@@ -10,11 +10,10 @@ import { useMediaQuery } from "react-responsive";
 import profile from '../assets/profile.jpeg';
 
 import CloseIcon from '@mui/icons-material/Close';
+import Chip from '@mui/material/Chip';
 import IconButton from '@mui/material/IconButton';
 import Snackbar from '@mui/material/Snackbar';
 import { useTitle } from './title_hook';
-
-import Chip from '@mui/material/Chip';
 
 export const PCChips = () => {
   return (

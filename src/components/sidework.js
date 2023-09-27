@@ -10,6 +10,7 @@ import { PostList } from "../data/post_list";
 import PostPage from "./post_page";
 import { useTitle } from "./title_hook";
 
+
 const Mobile = ({children}) => {
     const isMobile = useMediaQuery({
         query: "(max-width:768px)"

@@ -47,9 +47,6 @@ const PublicationBlock = ({item}) => {
         }
         position="bottom"
     />
-    {/* <p style={{textAlign:'justify'}}>
-        Summary: {item.desc}
-    </p> */}
     </ImageListItem>
     )
 }
