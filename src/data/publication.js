@@ -2,7 +2,7 @@ export const publicationData = [
     {
         img: process.env.PUBLIC_URL + '/imgs/bcu',
         title: 'Energy-based Cross-Attention for Bayesian Context Update in Text-to-Image Diffusion Models',
-        where: 'Geonyoung Park*, Jeongsol Kim*, Beomsu Kim, Sangwan Lee, Jong Chul Ye (*co-first) / NeurIPS 2024',
+        where: 'Geonyoung Park*, Jeongsol Kim*, Beomsu Kim, Sangwan Lee, Jong Chul Ye (*co-first) / NeurIPS 2023',
         code: '',
         paper: 'https://openreview.net/pdf?id=lOCHMGO6ow',
         dsec: 'Based on Hopsfield Network that has interpreted the attention operation in energy perspective, ' + 
@@ -14,7 +14,7 @@ export const publicationData = [
     {
         img: process.env.PUBLIC_URL + '/imgs/cddb',
         title: 'Direct Diffusion Bridge using Data Consistency for Inverse Problems',
-        where: 'Hyungjin Chung*, Jeongsol Kim*, Jong Chul Ye (*co-first) / NeurIPS 2024',
+        where: 'Hyungjin Chung, Jeongsol Kim, Jong Chul Ye / NeurIPS 2023',
         code: '',
         paper: 'https://openreview.net/pdf?id=497CevPdOg',
         dsec: 'We propose a modified inference procedure for Direct Diffusion Bridge (DDB) ' + 
