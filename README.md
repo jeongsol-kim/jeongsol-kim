@@ -31,16 +31,31 @@
 
 <br />
 
-## Check repositories for recent publications
+---
 
-<br />
+## Recent Publications
 
-<div align="center">
-<a href="https://github.com/DPS2022/diffusion-posterior-sampling">
-<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api/pin/?username=DPS2022&repo=diffusion-posterior-sampling" width="40%">
-<a />
-<a href="https://github.com/TAVIT2022/TAViT">
-<img align="center" src="https://github-readme-stats-jeongsol-kim.vercel.app/api/pin/?username=TAVIT2022&repo=TAViT" width="46%">
-<a />
+DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation
 
-<div />
+**J Kim***, GY Park*, JC Ye
+
+Regularization by Texts for Latent Diffusion Inverse Solvers
+
+**J Kim***, GY Park*, H Chung, JC Ye
+
+[NeurIPS 2023] Direct diffusion bridge using data consistency for inverse problems
+
+H Chung, **J Kim**, JC Ye
+
+[NeurIPS 2023] Energy-based cross attention for bayesian context update in text-to-image diffusion models
+
+GY Park*, **J Kim***, B Kim, SW Lee, JC Ye
+
+[CVPR 2023] Parallel diffusion models of operator and image for blind inverse problems
+
+H Chung*, **J Kim***, S Kim, JC Ye
+
+[ICLR 2023] Diffusion posterior sampling for general noisy inverse problems (spotlight)
+
+H Chung*, **J Kim***, MT Mccann, ML Klasky, JC Ye
+
