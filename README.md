@@ -35,6 +35,10 @@
 
 ## Recent Publications
 
+CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models
+
+H Chung*, **J Kim***, GY Park*, H Nam*, JC Ye
+
 DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation
 
 **J Kim***, GY Park*, JC Ye
