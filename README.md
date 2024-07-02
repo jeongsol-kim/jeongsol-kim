@@ -35,15 +35,19 @@
 
 ## Recent Publications
 
-CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models
+[Preprint] CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models
 
 H Chung*, **J Kim***, GY Park*, H Nam*, JC Ye
 
-DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation
+[ECCV 2024] Blind image deblurring with noise-robust kernel estimation
+
+C Lee, **J Kim**, S Lee, J Jung, Y Cho, T Kim, T Jo, M Lee, M Jang
+
+[ECCV 2024] DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation
 
 **J Kim***, GY Park*, JC Ye
 
-Regularization by Texts for Latent Diffusion Inverse Solvers
+[Preprint] Regularization by Texts for Latent Diffusion Inverse Solvers
 
 **J Kim***, GY Park*, H Chung, JC Ye
 
