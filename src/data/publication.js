@@ -1,5 +1,26 @@
 export const publicationData = [
     {
+        img: process.env.PUBLIC_URL + '/imgs/dreamsampler',
+        title: 'DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation',
+        where: 'Jeongsol Kim*, Geonyoung Park*, Jong Chul Ye (*co-first) / ECCV 2024',
+        code: '',
+        paper: 'https://arxiv.org/abs/2403.11415',
+        dsec: 'Reverse sampling and score-distillation have emerged as main workhorses in recent years for image manipulation using latent diffusion models (LDMs). '+
+        'While reverse diffusion sampling often requires adjustments of LDM architecture or feature engineering, '+
+        'score distillation offers a simple yet powerful model-agnostic approach, but it is often prone to mode-collapsing. '+
+        'To address these limitations and leverage the strengths of both approaches, here we introduce a novel framework called DreamSampler, '+
+        'which seamlessly integrates these two distinct approaches through the lens of regularized latent optimization.'
+    },
+    {
+        img: process.env.PUBLIC_URL + '/imgs/deconv',
+        title: 'Blind image deblurring with noise-robust kernel estimation',
+        where: 'Chanseok Lee, Jeongsol Kim, Seungmin Lee, Jaehwang Jung, Yunje Cho, Taejoong Kim, Taeyong Jo, Myungjun Lee, Mooseok Jang / ECCV 2024',
+        code: 'https://github.com/csleemooo/BD_noise_robust_kernel_estimation',
+        paper: '',
+        dsec: 'We propose a blind deblurring method based on a noise-robust kernel estimation function and deep image prior (DIP). '+
+        'Specifically, the proposed kernel estimation function effectively estimates the blur kernel even for strongly noisy blurry images given a clear image and optimal condition.'
+    },
+    {
         img: process.env.PUBLIC_URL + '/imgs/bcu',
         title: 'Energy-based Cross-Attention for Bayesian Context Update in Text-to-Image Diffusion Models',
         where: 'Geonyoung Park*, Jeongsol Kim*, Beomsu Kim, Sangwan Lee, Jong Chul Ye (*co-first) / NeurIPS 2023',

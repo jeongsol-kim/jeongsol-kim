@@ -7,7 +7,7 @@ import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 import { useMediaQuery } from "react-responsive";
-import profile from '../assets/profile.jpeg';
+import profile from '../assets/profile_summer.png';
 
 import CloseIcon from '@mui/icons-material/Close';
 import Chip from '@mui/material/Chip';
@@ -138,7 +138,9 @@ const EmailPopOver = () => {
 const Profile = () => {
     return (
         <div 
-            style={{alignContent: 'center'}}>
+            style={{alignContent: 'center',
+                    overflow: 'hidden',
+            }}>
             <img 
                 className='profile'
                 src={profile}
