@@ -12,7 +12,7 @@
 :punch: Main programming language is Python. Love Pytorch and JAX by google.
 
 
-:bulb: Trying to learn various programming languages such as Javascript, C++ and C#, and rust.
+:bulb: Focusing on easy-to-use, easy-to-read code.
 
 
 :mag_right: Visit [my website](https://jeongsol.dev) if you're interested in :)
