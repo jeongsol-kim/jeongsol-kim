@@ -1,6 +1,6 @@
 
-import PublicationList from "./publicationList";
 import { publicationData } from "../data/publication";
+import PublicationListv2 from "./publicationList";
 
 const Publication = () => {
     return (
@@ -9,7 +9,7 @@ const Publication = () => {
             style={{textAlign:'center', padding: '1rem 0'}}>
             Publications
         </h2>
-        <PublicationList itemData={publicationData}/>
+        <PublicationListv2 itemData={publicationData}/>
         </>
     );
 }
