@@ -3,14 +3,16 @@
 #
 <br />
 
-😄 Hello, I'm a Ph.D candidate at Dept. of Bio and Brain Engineering, Korea Advanced Inst. of Science & Technology (KAIST).
+😄 Hello, I'm a 3rd years Ph.D student at Korea Advanced Inst. of Science & Technology (KAIST).
 
 <br />
+
+:book: My primary research focus is the diffusion model. I've solved image manipulation, generation and inverse problems by regulating the diffusion sampling process. Currently, I'm expanding my interests to flow-based models.
 
 :punch: Main programming language is Python. Love Pytorch and JAX by google.
 
 
-:bulb: Trying to learn various programming languages such as Javascript, C++ and C#, and rust.
+:bulb: Focusing on easy-to-use, easy-to-read code.
 
 
 :mag_right: Visit [my website](https://jeongsol.dev) if you're interested in :)
@@ -33,7 +35,7 @@
 
 ---
 
-## Recent Publications
+## Recent Publications 
 
 [Preprint] CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models
 
@@ -67,3 +69,4 @@ H Chung*, **J Kim***, S Kim, JC Ye
 
 H Chung*, **J Kim***, MT Mccann, ML Klasky, JC Ye
 
+(* Equal contribution)
