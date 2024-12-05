@@ -1,9 +1,62 @@
 export const publicationData = [
     {
+        img: process.env.PUBLIC_URL + '/imgs/latentsb',
+        title: 'Latent Schrodinger Bridge: Prompting Latent Diffusion for Fast Unpaired Image-to-Image Translation',
+        where: 'Jeongsol Kim*, Beomsu Kim*, Jong Chul Ye (*co-first) / Preprint',
+        code: 'https://github.com/LatentSB/LatentSB',
+        paper: 'https://arxiv.org/abs/2411.14863',
+        dsec: 'Diffusion models (DMs), which enable both image generation from noise and inversion from data, '+
+        'have inspired powerful unpaired image-to-image (I2I) translation algorithms. However, they often require a larger number of neural function evaluations (NFEs), '+
+        'limiting their practical applicability. In this paper, we tackle this problem with Schrodinger Bridges (SBs), which are stochastic differential equations (SDEs) '+
+        'between distributions with minimal transport cost. We analyze the probability flow ordinary differential equation (ODE) formulation of SBs, '+
+        'and observe that we can decompose its vector field into a linear combination of source predictor, target predictor, and noise predictor. '+
+        'Inspired by this observation, we propose Latent Schrodinger Bridges (LSBs) that approximate the SB ODE via pre-trained Stable Diffusion, '+
+        'and develop appropriate prompt optimization and change of variables formula to match the training and inference between distributions. ' +
+        'We demonstrate that our algorithm successfully conduct competitive I2I translation in unsupervised setting with only a fraction of computation cost required by previous DM-based I2I methods.'
+    },
+    {
+        img: process.env.PUBLIC_URL + '/imgs/cfgpp',
+        title: 'CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models',
+        where: 'Hyungjin Chung*, Jeongsol Kim*, Geon Yeong Park*, Hyelin Nam*, Jong Chul Ye (*co-first) / Preprint',
+        code: 'https://github.com/CFGpp-diffusion/CFGpp',
+        paper: 'https://arxiv.org/abs/2403.11415',
+        dsec: 'Classifier-free guidance (CFG) is a fundamental tool in modern diffusion models for text-guided generation. '+
+        'This paper reveals that problems of CFG actually stem from the off-manifold phenomenon associated with CFG. '+
+        'Thus, we reformulate text-guidance as an inverse problem with a text-conditioned score matching loss and develop CFG++, '+
+        'a novel approach that tackles the off-manifold challenges inherent in traditional CFG. '+
+        'CFG++ features a surprisingly simple fix to CFG, yet it offers significant improvements, including better sample quality for text-to-image generation, invertibility, smaller guidance scales, reduced etc. ' +
+        'Project Page: https://cfgpp-diffusion.github.io/anon.'
+    },
+    {
+        img: process.env.PUBLIC_URL + '/imgs/treg',
+        title: 'Regularization by Texts for Latent Inverse Solvers',
+        where: 'Jeongsol Kim*, Geonyoung Park*, Hyunjin Chung, Jong Chul Ye (*co-first) / Preprint',
+        code: '',
+        paper: 'https://arxiv.org/abs/2311.15658',
+        dsec: 'Current diffusion-based inverse problem solvers depend on the prior distribution in reducing the solution space. '+
+        'However, it always provide the most likely solution, which is not always the desired solution. '+
+        'Thus, we explore an additional cue in solving inverse problem and propose a novel framework called Regularization by Texts (TReg). '+
+        'By defining a latent optimization problem and solvig it in alternative approach, TReg successfully find a solution ' +
+        'that satisfies both 1) data consistency and 2) text-guidance.'
+    },
+    {
+        img: process.env.PUBLIC_URL + '/imgs/gctm',
+        title: 'Generalized Consistency Trajectory Models for Image Manipulation',
+        where: 'Beomsu Kim*, Jaemin Kim*, Jeongsol Kim, Jong Chul Ye (*co-first) / Preprint',
+        code: 'https://github.com/1202kbs/GCTM',
+        paper: 'https://arxiv.org/abs/2403.12510',
+        dsec: 'The success of Diffusion Model (DM) lies in the iterative nature of diffusion: diffusion breaks down the complex process of mapping noise to data into a sequence of simple denoising tasks. '+
+        'However, the iterative process is also computationally intensive, often taking from tens up to thousands of function evaluations. '+
+        'Thus, we explore an additional cue in solving inverse problem and propose a novel framework called Regularization by Texts (TReg). '+
+        'Although consistency trajectory models (CTMs) enable traversal between any time points along the probability flow ODE (PFODE) '+
+        'and score inference with a single function evaluation, CTMs only allow translation from Gaussian noise to data. '+
+        'This work aims to unlock the full potential of CTMs by proposing generalized CTMs (GCTMs), which translate between arbitrary distributions via ODEs.'
+    },
+    {
         img: process.env.PUBLIC_URL + '/imgs/dreamsampler',
         title: 'DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation',
         where: 'Jeongsol Kim*, Geonyoung Park*, Jong Chul Ye (*co-first) / ECCV 2024',
-        code: '',
+        code: 'https://github.com/DreamSampler/dream-sampler',
         paper: 'https://arxiv.org/abs/2403.11415',
         dsec: 'Reverse sampling and score-distillation have emerged as main workhorses in recent years for image manipulation using latent diffusion models (LDMs). '+
         'While reverse diffusion sampling often requires adjustments of LDM architecture or feature engineering, '+
@@ -16,7 +69,7 @@ export const publicationData = [
         title: 'Blind image deblurring with noise-robust kernel estimation',
         where: 'Chanseok Lee, Jeongsol Kim, Seungmin Lee, Jaehwang Jung, Yunje Cho, Taejoong Kim, Taeyong Jo, Myungjun Lee, Mooseok Jang / ECCV 2024',
         code: 'https://github.com/csleemooo/BD_noise_robust_kernel_estimation',
-        paper: '',
+        paper: 'https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03024.pdf',
         dsec: 'We propose a blind deblurring method based on a noise-robust kernel estimation function and deep image prior (DIP). '+
         'Specifically, the proposed kernel estimation function effectively estimates the blur kernel even for strongly noisy blurry images given a clear image and optimal condition.'
     },
@@ -24,7 +77,7 @@ export const publicationData = [
         img: process.env.PUBLIC_URL + '/imgs/bcu',
         title: 'Energy-based Cross-Attention for Bayesian Context Update in Text-to-Image Diffusion Models',
         where: 'Geonyoung Park*, Jeongsol Kim*, Beomsu Kim, Sangwan Lee, Jong Chul Ye (*co-first) / NeurIPS 2023',
-        code: '',
+        code: 'https://github.com/EnergyAttention/Energy-Based-CrossAttention',
         paper: 'https://openreview.net/pdf?id=lOCHMGO6ow',
         dsec: 'Based on Hopsfield Network that has interpreted the attention operation in energy perspective, ' + 
         'we propose context update for the cross-attention operation using newly introduced energy function. ' + 
@@ -36,7 +89,7 @@ export const publicationData = [
         img: process.env.PUBLIC_URL + '/imgs/cddb',
         title: 'Direct Diffusion Bridge using Data Consistency for Inverse Problems',
         where: 'Hyungjin Chung, Jeongsol Kim, Jong Chul Ye / NeurIPS 2023',
-        code: '',
+        code: 'https://github.com/HJ-harry/CDDB/tree/main',
         paper: 'https://openreview.net/pdf?id=497CevPdOg',
         dsec: 'We propose a modified inference procedure for Direct Diffusion Bridge (DDB) ' + 
         'that imposes data consistency without the need for fine-tuning. ' +
