@@ -40,9 +40,17 @@
 
 **J Kim***, B Kim*, JC Ye
 
-[Preprint] CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models
+[ICLR 2025] Regularization by Texts for Latent Diffusion Inverse Solvers
+
+**J Kim***, GY Park*, H Chung, JC Ye
+
+[ICLR 2025] CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models
 
 H Chung*, **J Kim***, GY Park*, H Nam*, JC Ye
+
+[ICLR 2025] Generalized Consistency Trajectory Models
+
+B Kim*, J Kim*, **J Kim**, JC Ye
 
 [ECCV 2024] Blind image deblurring with noise-robust kernel estimation
 
@@ -51,14 +59,6 @@ C Lee, **J Kim**, S Lee, J Jung, Y Cho, T Kim, T Jo, M Lee, M Jang
 [ECCV 2024] DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation
 
 **J Kim***, GY Park*, JC Ye
-
-[Preprint] Generalized Consistency Trajectory Models
-
-B Kim*, J Kim*, **J Kim**, JC Ye
-
-[Preprint] Regularization by Texts for Latent Diffusion Inverse Solvers
-
-**J Kim***, GY Park*, H Chung, JC Ye
 
 [NeurIPS 2023] Direct diffusion bridge using data consistency for inverse problems
 
