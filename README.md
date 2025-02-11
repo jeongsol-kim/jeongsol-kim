@@ -40,7 +40,7 @@
 
 **J Kim***, B Kim*, JC Ye
 
-[ICLR 2025] Regularization by Texts for Latent Diffusion Inverse Solvers
+[ICLR 2025] Regularization by Texts for Latent Diffusion Inverse Solvers (spotlight)
 
 **J Kim***, GY Park*, H Chung, JC Ye
 
