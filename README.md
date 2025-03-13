@@ -3,7 +3,7 @@
 #
 <br />
 
-😄 Hello, I'm a 3rd years Ph.D student at Korea Advanced Inst. of Science & Technology (KAIST).
+😄 Hello, I'm a 4th years Ph.D student at Korea Advanced Inst. of Science & Technology (KAIST).
 
 <br />
 
