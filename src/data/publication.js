@@ -1,5 +1,31 @@
 export const publicationData = [
     {
+        img: process.env.PUBLIC_URL + '/imgs/flowdps',
+        title: 'FlowDPS: Flow-Driven Posterior Sampling for Inverse Problems',
+        where: 'Jeongsol Kim*, Bryan Sangwoo Kim*, Jong Chul Ye (*co-first) / Preprint',
+        code: 'https://github.com/FlowDPS-Inverse/FlowDPS',
+        paper: 'https://arxiv.org/abs/2503.08136',
+        dsec: 'Flow matching is a recent state-of-the-art framework for generative modeling based on ordinary differential equations (ODEs). '+
+        'While closely related to diffusion models, it provides a more general perspective on generative modeling. '+
+        'Although inverse problem solving has been extensively explored using diffusion models, it has not been rigorously examined within the broader context of flow models.' +
+        'Therefore, we extend the diffusion inverse solvers (DIS)— which perform posterior sampling by combining a denoising diffusion prior with an likelihood gradient—into the flow framework. '+
+        'Our proposed solver, Flow-Driven Posterior Sampling (FlowDPS), can also be seamlessly integrated into a latent flow model with a transformer architecture. '+
+        'Across four linear inverse problems, we confirm that FlowDPS outperforms state-of-the-art alternatives, all without requiring additional training.'
+    }, 
+    {
+        img: process.env.PUBLIC_URL + '/imgs/softrepa',
+        title: 'Aligning Text to Image in Diffusion Models is Easier Than You Think',
+        where: 'Jaa-yeon Lee*, Byunghee Cha*, Jeongsol Kim, Jong Chul Ye (*co-first) / Preprint',
+        code: 'https://github.com/softrepa/SoftREPA',
+        paper: 'https://arxiv.org/abs/2503.08250',
+        dsec: 'While recent advancements in generative modeling have significantly improved text-image alignment, some residual misalignment between text and image representations still remains. '+
+        'Although many approaches have attempted to address this issue by fine-tuning models using various reward models, we revisit the challenge from the perspective of representation alignment—an approach that has gained popularity with the success of REPresentation Alignment (REPA). ' +
+        'We first argue that conventional text-to-image (T2I) diffusion models, typically trained on paired image and text data (i.e., positive pairs) by minimizing score matching or flow matching losses, is suboptimal from the standpoint of representation alignment. '+
+        'Instead, a better alignment can be achieved through contrastive learning that leverages both positive and negative pairs. '+
+        'To achieve this efficiently even with pretrained models, we introduce a lightweight contrastive fine-tuning strategy called SoftREPA that uses soft text tokens. ' +
+        'Our theoretical analysis demonstrates that our method explicitly increases the mutual information between text and image representations, leading to enhanced semantic consistency.'
+    },
+    {
         img: process.env.PUBLIC_URL + '/imgs/latentsb',
         title: 'Latent Schrodinger Bridge: Prompting Latent Diffusion for Fast Unpaired Image-to-Image Translation',
         where: 'Jeongsol Kim*, Beomsu Kim*, Jong Chul Ye (*co-first) / Preprint',
@@ -17,7 +43,7 @@ export const publicationData = [
     {
         img: process.env.PUBLIC_URL + '/imgs/cfgpp',
         title: 'CFG++: Manifold-constrained Classifier Free Guidance for Diffusion Models',
-        where: 'Hyungjin Chung*, Jeongsol Kim*, Geon Yeong Park*, Hyelin Nam*, Jong Chul Ye (*co-first) / Preprint',
+        where: 'Hyungjin Chung*, Jeongsol Kim*, Geon Yeong Park*, Hyelin Nam*, Jong Chul Ye (*co-first) / ICLR 2025',
         code: 'https://github.com/CFGpp-diffusion/CFGpp',
         paper: 'https://arxiv.org/abs/2403.11415',
         dsec: 'Classifier-free guidance (CFG) is a fundamental tool in modern diffusion models for text-guided generation. '+
@@ -30,7 +56,7 @@ export const publicationData = [
     {
         img: process.env.PUBLIC_URL + '/imgs/treg',
         title: 'Regularization by Texts for Latent Inverse Solvers',
-        where: 'Jeongsol Kim*, Geonyoung Park*, Hyunjin Chung, Jong Chul Ye (*co-first) / Preprint',
+        where: 'Jeongsol Kim*, Geonyoung Park*, Hyunjin Chung, Jong Chul Ye (*co-first) / ICLR 2025 (Spotlight, Top 5%)',
         code: '',
         paper: 'https://arxiv.org/abs/2311.15658',
         dsec: 'Current diffusion-based inverse problem solvers depend on the prior distribution in reducing the solution space. '+
@@ -42,7 +68,7 @@ export const publicationData = [
     {
         img: process.env.PUBLIC_URL + '/imgs/gctm',
         title: 'Generalized Consistency Trajectory Models for Image Manipulation',
-        where: 'Beomsu Kim*, Jaemin Kim*, Jeongsol Kim, Jong Chul Ye (*co-first) / Preprint',
+        where: 'Beomsu Kim*, Jaemin Kim*, Jeongsol Kim, Jong Chul Ye (*co-first) / ICLR 2025',
         code: 'https://github.com/1202kbs/GCTM',
         paper: 'https://arxiv.org/abs/2403.12510',
         dsec: 'The success of Diffusion Model (DM) lies in the iterative nature of diffusion: diffusion breaks down the complex process of mapping noise to data into a sequence of simple denoising tasks. '+
