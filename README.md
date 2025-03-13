@@ -36,6 +36,15 @@
 ---
 
 ## Recent Publications 
+
+[Preprint] FlowDPS: Flow-Drien Posterior Sampling for Inverse Problems
+
+**J Kim***, BS Kim*, JC Ye
+
+[Preprint] Aligning Text to Image in Diffusion Models is Easier Than You Think
+
+JY Lee*, B Cha*, **J Kim**, JC Ye
+
 [Preprint] Latent Schodinger Bridge: Prompting Latent Diffusion for Fast Unpaired Image-to-Image Translation
 
 **J Kim***, B Kim*, JC Ye
