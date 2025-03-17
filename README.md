@@ -15,9 +15,7 @@
 
 :mag_right: Visit [my website](https://jeongsol.dev) if you're interested in :)
 
+:books: For the recent publications, please visit my [google scholar](https://scholar.google.com/citations?user=ZaVNwcQAAAAJ).
+
 <br />
 
----
-
-## Recent Publications
-: visit my [google scholar](https://scholar.google.com/citations?user=ZaVNwcQAAAAJ).
