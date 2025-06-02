@@ -5,7 +5,7 @@
 
 <br />
 
-:book: My primary research focus is the diffusion model. I've solved image manipulation, generation and inverse problems by regulating the diffusion sampling process. Currently, I'm expanding my interests to flow-based models.
+:book: My primary research focus is the flow/diffusion model. I've solved image editing, generation and inverse problems by regulating the sampling process.
 
 :punch: Main programming language is Python. Love Pytorch and JAX by google.
 
