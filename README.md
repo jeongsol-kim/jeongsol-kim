@@ -2,7 +2,8 @@
 <br />
 
 😄 Hi, I'm a 4th years Ph.D student at Korea Advanced Inst. of Science & Technology (KAIST).
-From June, I joined to Snap Research @ NYC as research intern.
+
+👻 From June, I joined to Snap Research @ NYC as research intern.
 
 <br />
 
